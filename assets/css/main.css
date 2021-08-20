@@ -3,7 +3,7 @@
 	font-family: 'Poppins', sans-serif;
 	color: #000;
 	font-weight: 500;
-	font-size: 14px;
+	font-size: 110%;
 	
 }
 .email a:hover, .contactme a:hover{
@@ -28,7 +28,7 @@ li a{
 	font-family: 'Cinzel', serif;
 	color: #000!important;
 	font-weight: 700;
-	font-size: 30px;
+	font-size: 220%;
 	margin-top: 30px;
 	margin-bottom: 30px;
 }
@@ -139,7 +139,6 @@ font-family: 'Poppins', sans-serif;
 .sonoio{
 	margin-top: 200px;
 }
-
-	
-	
-	
+.imgc{
+	margin-top: 110px;
+}
