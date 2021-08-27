@@ -12,17 +12,27 @@
 }
 .centratutto{
 	margin-top: 60px;
-	
 }
 .img{
 	margin-top: 160px;
 	margin-bottom: 265px;
+	text-align: center;
+	color: white;
+	font-size: 2vw;
+	font-family: 'poppins regular';
+	line-height: 1.6;
+}
+.yoga_digitale{
+	position: absolute;
+	top: 20%;
+	right: 7%;
+	left: 70%;
 }
 .navbar-default {
     background-color: #e5be8e !important;
-	margin-top: 95px;
-    
+    margin-top: 95px;
 }
+
 
 li a{
 	font-family: 'Cinzel', serif;
@@ -43,15 +53,15 @@ li a:hover{
 	font-family: 'Cinzel', serif;
 	color: #99775b!important;
 	font-weight: 700;
-	font-size: 45px;
+	font-size: 300%;
 	margin-bottom: 100px;
 }
 .explain h6{
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Cinzel', sans-serif;
 	color: #000;
-	font-weight: 400;
-	font-size: 20px;
-	margin-top: 100px;
+	font-weight: 550;
+	font-size: 22px;
+	margin-top: 50px;
 }
 .corso h5{
 	font-family: 'Poppins', sans-serif;
@@ -131,9 +141,10 @@ font-family: 'Poppins', sans-serif;
 .testino p{
 	color: #000;
 	font-weight: 300;
-	font-size: 20px;
+	font-size: 22px;
 	margin-top: 90px;
 	margin-bottom: 200px;
+	font-family: 'poppins regular';
 }
 .sonoio{
 	margin-top: 200px;
