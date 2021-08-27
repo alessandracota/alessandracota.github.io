@@ -19,12 +19,12 @@
 	text-align: center;
 	color: white;
 	font-size: 2vw;
-	font-family: 'poppins regular';
+	font-family: 'Poppins', sans-serif;
 	line-height: 1.6;
 }
 .yoga_digitale{
 	position: absolute;
-	top: 20%;
+	top: 19%;
 	right: 7%;
 	left: 70%;
 }
