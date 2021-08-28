@@ -168,10 +168,10 @@ li a:hover{
 }
 
 .bottone a{
-	color: white;
+	color: #4F4F4F;
 }
 
 .bottone a:hover{
-	color: white;
+	color: #cc640e;
 	text-decoration: none;
 }
