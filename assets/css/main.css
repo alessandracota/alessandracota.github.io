@@ -16,8 +16,8 @@
 }
 
 .img{
-	margin-top: 160px;
-	margin-bottom: 265px;
+	margin-top: 10vw;
+	margin-bottom: 225px;
 	text-align: center;
 	color: white;
 	font-size: 2vw;
@@ -36,13 +36,17 @@
     margin-top: 95px;
 }
 
+.navbar-brand{
+	font-family: 'Cinzel', serif;
+}
+
 li a{
 	font-family: 'Cinzel', serif;
 	color: #000!important;
 	font-weight: 700;
 	font-size: 220%;
-	margin-top: 30px;
-	margin-bottom: 30px;
+	margin-top: 20px;
+	margin-bottom: 20px;
 }
 
 li a:hover{
@@ -102,6 +106,7 @@ li a:hover{
 .emaila, .numero{
 	margin-top: 95px!important;
 }
+
 .emaila a, .numero a{	
 	font-family: 'Poppins', sans-serif;
 	color: #000;
@@ -138,6 +143,7 @@ li a:hover{
 .iconette .fab:hover{
 	color: #686867!important;
 }
+
 #background{
 	width: 100%;
     margin-left: auto;
@@ -146,6 +152,7 @@ li a:hover{
     background-repeat: repeat-x;
 	margin-top: 150px;
 }
+
 .testino p{
 	color: #000;
 	font-weight: 400;
@@ -153,15 +160,19 @@ li a:hover{
 	margin-top: 90px;
 	font-family: 'Poppins', sans-serif;
 }
+
 .sonoio{
-	margin-top: 200px;
+	margin-top: 10vw;
 }
+
 .imgc{
 	margin-top: 145px;
 }
+
 .img_annacarla{
 	margin-top: 85px;
 }
+
 .bottone{
 	margin-top: 140px;
 }
