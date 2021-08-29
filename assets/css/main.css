@@ -104,7 +104,7 @@ li a:hover{
 }
 
 .emaila, .numero{
-	margin-top: 95px!important;
+	margin-top: 105px!important;
 }
 
 .emaila a, .numero a{	
@@ -112,7 +112,7 @@ li a:hover{
 	color: #000;
 	font-weight: 300;
 	font-size: 20px;
-
+	text-align: center;
 }
 
 .emaila a:hover, .numero a:hover{
@@ -137,7 +137,6 @@ li a:hover{
 
  .iconette .fab {
 	color: #cc640e!important;
-	 margin-left: 35px;
 }
 
 .iconette .fab:hover{
