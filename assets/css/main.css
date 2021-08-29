@@ -15,9 +15,9 @@
 	margin-top: 60px;
 }
 
-.img{
-	margin-top: 10vw;
-	margin-bottom: 225px;
+.imgalbero{
+	margin-top: 8vh;
+	margin-bottom: 20vh;
 	text-align: center;
 	color: white;
 	font-size: 2vw;
@@ -38,6 +38,7 @@
 
 .navbar-brand{
 	font-family: 'Cinzel', serif;
+	font-size: 12px !important;
 }
 
 li a{
@@ -183,4 +184,15 @@ li a:hover{
 .bottone a:hover{
 	color: #cc640e;
 	text-decoration: none;
+}
+.panel-default{
+	margin-top: 10vh;
+}
+
+.panel-heading{
+	font-size: 30px;
+}
+
+.panel-body{
+	font-size: 20px;
 }
