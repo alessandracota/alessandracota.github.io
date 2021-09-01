@@ -82,7 +82,19 @@ li a:hover{
 	color: #000;
 	font-weight: 550;
 	font-size: 22px;
-	margin-top: 50px;
+	margin-top: 8vh;
+}
+
+.sonoio{
+	margin-top: 10vw;
+}
+
+.img_c{
+	margin-top: 10vw;
+}
+
+.img_respirazione{
+	margin-top: 7vw;
 }
 
 .corso h5{
@@ -169,18 +181,6 @@ li a:hover{
 	font-size: 18px;
 	margin-top: 90px;
 	font-family: 'Poppins', sans-serif;
-}
-
-.sonoio{
-	margin-top: 10vw;
-}
-
-.imgc{
-	margin-top: 145px;
-}
-
-.img_annacarla{
-	margin-top: 85px;
 }
 
 .bottone{
