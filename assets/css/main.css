@@ -12,7 +12,7 @@
 }
 
 .centratutto{
-	margin-top: 60px;
+	margin-top: 3.2vw;
 }
 
 .imgalbero{
@@ -33,7 +33,7 @@
 
 .navbar-default {
     background-color: #e5be8e !important;
-    margin-top: 95px;
+    margin-top: 5vw;
 }
 
 .navbar-brand{
@@ -46,7 +46,8 @@ li a{
 	color: #000!important;
 	font-weight: 700;
 	font-size: 220%;
-	margin-bottom: 20px;
+	margin-top: 25px;
+	margin-bottom: 25px;
 }
 
 li a:hover{
