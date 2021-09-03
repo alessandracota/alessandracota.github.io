@@ -20,6 +20,11 @@
     margin-top: 5vw;
 }
 
+.navbar-header{
+	margin-top: 8px;
+	margin-bottom: 8px;
+}
+
 .navbar-brand{
 	font-family: 'Cinzel', serif;
 	font-size: 12px !important;
