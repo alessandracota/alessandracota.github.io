@@ -11,7 +11,7 @@
 	text-decoration: none;
 }
 
-.centratutto{
+.margine_logo{
 	margin-top: 3.2vw;
 }
 
@@ -75,7 +75,7 @@ li a:hover{
 	margin-top: 93px!important;
 }
 
-.lesson h5{
+.lezione h5{
 	font-family: 'Cinzel', serif;
 	color: #99775b!important;
 	font-weight: 700;
@@ -93,6 +93,10 @@ li a:hover{
 
 .sonoio{
 	margin-top: 10vw;
+}
+
+.primo_piano{
+	margin-top: 12vw;
 }
 
 .img_c{
@@ -190,16 +194,16 @@ li a:hover{
 	margin-top: 150px;
 }
 
-.testino p{
+.testo p{
 	color: #000;
 	font-weight: 400;
 	font-size: 18px;
-	margin-top: 90px;
+	margin-top: 60px;
 	font-family: 'Poppins', sans-serif;
 }
 
 .bottone{
-	margin-top: 12vw;
+	margin-top: 100px;
 }
 
 .bottone a{
