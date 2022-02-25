@@ -75,7 +75,7 @@ li a:hover{
 	margin-top: 93px!important;
 }
 
-.lezione h5{
+.lezione h2{
 	font-family: 'Cinzel', serif;
 	color: #99775b!important;
 	font-weight: 700;
@@ -107,7 +107,7 @@ li a:hover{
 	margin-top: 11%;
 }
 
-.corso h5{
+.corso h2{
 	font-family: 'Poppins', sans-serif;
 	color: #99775b;
 	font-weight: 800;
@@ -115,7 +115,7 @@ li a:hover{
 	margin-top: 100px;
 }
 
-.contattami h2{
+.POP h2{
 	font-family: 'Poppins', sans-serif;
 	color: #000;
 	font-weight: 800;
@@ -123,11 +123,11 @@ li a:hover{
 	margin-top: 10vh;
 }
 
-.contattami a{
+.POP a{
 	color: #000;
 }
 
-.contattami a:hover{
+.POP a:hover{
 	color: #cc640e;
 	text-decoration: none;
 }
@@ -142,7 +142,6 @@ li a:hover{
 .row{
 	margin-left: auto;
 	margin-right: auto;
-	
 }
 
 .emaila, .numero{
@@ -185,15 +184,6 @@ li a:hover{
 	color: #686867!important;
 }
 
-#background{
-	width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    background-image: url("../images/backr.png");
-    background-repeat: repeat-x;
-	margin-top: 150px;
-}
-
 .testo p{
 	color: #000;
 	font-weight: 400;
@@ -228,4 +218,22 @@ li a:hover{
 
 .poesia{
 	margin-top: 100px;
+}
+
+.abbonamento{
+	margin-top: 7vw;
+}
+
+.abbonamento a, .abbonamento input[type=submit]{
+	color: black;
+	font-weight: 600;
+	font-size: 25px;
+	text-decoration: none;
+	border: none;
+	background-color: transparent;
+}
+
+.abbonamento a:hover, .abbonamento input[type=submit]:hover{
+	color: #e5be8e;
+	text-decoration: none;
 }
