@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kundalini Yoga Siena · Gestisci lo Stress con il Yoga</title>
+  <meta name="description" content="Kundalini Yoga a Siena con Alessandra Cota. Piccoli gruppi, approccio profondo. Riduci stress, ansia e tensione cronica. Contattami su WhatsApp.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --gold: #c9a96e;
+      --gold-light: #e8d5b0;
+      --gold-dark: #8a6d3b;
+      --cream: #faf7f2;
+      --dark: #1a1612;
+      --text: #3a3028;
+      --muted: #7a6a58;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Jost', sans-serif;
+      background: var(--cream);
+      color: var(--text);
+      overflow-x: hidden;
+    }
+
+    /* ── HERO ── */
+    .hero {
+      position: relative;
+      min-height: 100svh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      background: var(--dark);
+    }
+
+    .hero-bg {
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(ellipse 80% 60% at 30% 40%, rgba(201,169,110,0.18) 0%, transparent 60%),
+        radial-gradient(ellipse 60% 80% at 75% 70%, rgba(201,169,110,0.10) 0%, transparent 55%),
+        linear-gradient(160deg, #1a1612 0%, #2a2018 50%, #1a1210 100%);
+    }
+
+    /* Decorative mandala-like rings */
+    .hero-ring {
+      position: absolute;
+      border-radius: 50%;
+      border: 1px solid rgba(201,169,110,0.15);
+      pointer-events: none;
+      animation: ringPulse 8s ease-in-out infinite;
+    }
+    .hero-ring:nth-child(1) { width: 420px; height: 420px; top: 50%; left: 50%; transform: translate(-50%,-50%); animation-delay: 0s; }
+    .hero-ring:nth-child(2) { width: 620px; height: 620px; top: 50%; left: 50%; transform: translate(-50%,-50%); animation-delay: 1.5s; border-color: rgba(201,169,110,0.09); }
+    .hero-ring:nth-child(3) { width: 820px; height: 820px; top: 50%; left: 50%; transform: translate(-50%,-50%); animation-delay: 3s; border-color: rgba(201,169,110,0.06); }
+
+    @keyframes ringPulse {
+      0%, 100% { opacity: 0.6; transform: translate(-50%,-50%) scale(1); }
+      50% { opacity: 1; transform: translate(-50%,-50%) scale(1.03); }
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      text-align: center;
+      padding: 60px 24px;
+      max-width: 680px;
+      animation: fadeUp 1.2s ease both;
+    }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    .hero-eyebrow {
+      font-family: 'Jost', sans-serif;
+      font-weight: 300;
+      font-size: 11px;
+      letter-spacing: 0.35em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 28px;
+      opacity: 0;
+      animation: fadeUp 1s ease 0.3s both;
+    }
+
+    .hero h1 {
+      font-family: 'Cormorant Garamond', serif;
+      font-weight: 300;
+      font-size: clamp(2.8rem, 8vw, 5.2rem);
+      line-height: 1.1;
+      color: #f5efe6;
+      margin-bottom: 28px;
+      opacity: 0;
+      animation: fadeUp 1s ease 0.5s both;
+    }
+
+    .hero h1 em {
+      font-style: italic;
+      color: var(--gold-light);
+    }
+
+    .hero-sub {
+      font-size: 1rem;
+      font-weight: 300;
+      line-height: 1.8;
+      color: rgba(245,239,230,0.72);
+      margin-bottom: 44px;
+      opacity: 0;
+      animation: fadeUp 1s ease 0.7s both;
+    }
+
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 16px 32px;
+      background: var(--gold);
+      color: var(--dark);
+      text-decoration: none;
+      font-family: 'Jost', sans-serif;
+      font-weight: 500;
+      font-size: 0.85rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      border-radius: 2px;
+      transition: background 0.3s, transform 0.2s, box-shadow 0.3s;
+      opacity: 0;
+      animation: fadeUp 1s ease 0.9s both;
+      box-shadow: 0 4px 24px rgba(201,169,110,0.25);
+    }
+
+    .btn-primary:hover {
+      background: var(--gold-light);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 32px rgba(201,169,110,0.4);
+    }
+
+    .btn-primary svg { flex-shrink: 0; }
+
+    /* ── DIVIDER ── */
+    .ornament {
+      text-align: center;
+      padding: 16px 0;
+      color: var(--gold);
+      font-size: 1.2rem;
+      letter-spacing: 0.5em;
+      opacity: 0.5;
+    }
+
+    /* ── SECTIONS ── */
+    .section {
+      padding: 80px 24px;
+      max-width: 720px;
+      margin: 0 auto;
+    }
+
+    .section-label {
+      font-size: 10px;
+      letter-spacing: 0.4em;
+      text-transform: uppercase;
+      color: var(--gold);
+      font-weight: 500;
+      margin-bottom: 18px;
+      display: block;
+    }
+
+    .section h2 {
+      font-family: 'Cormorant Garamond', serif;
+      font-weight: 300;
+      font-size: clamp(2rem, 5vw, 3rem);
+      line-height: 1.2;
+      color: var(--dark);
+      margin-bottom: 28px;
+    }
+
+    .section h2 em {
+      font-style: italic;
+      color: var(--gold-dark);
+    }
+
+    .section p {
+      font-size: 1.05rem;
+      font-weight: 300;
+      line-height: 1.85;
+      color: var(--muted);
+      margin-bottom: 18px;
+    }
+
+    .section p strong {
+      color: var(--text);
+      font-weight: 500;
+    }
+
+    /* ── SINTOMI ── */
+    .symptoms-block {
+      background: var(--dark);
+      padding: 80px 24px;
+    }
+
+    .symptoms-inner {
+      max-width: 720px;
+      margin: 0 auto;
+    }
+
+    .symptoms-inner .section-label { color: var(--gold); }
+
+    .symptoms-inner h2 {
+      font-family: 'Cormorant Garamond', serif;
+      font-weight: 300;
+      font-size: clamp(2rem, 5vw, 3rem);
+      color: #f5efe6;
+      margin-bottom: 44px;
+      line-height: 1.2;
+    }
+
+    .symptoms-inner h2 em {
+      font-style: italic;
+      color: var(--gold-light);
+    }
+
+    .symptom-list {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+
+    @media (max-width: 480px) {
+      .symptom-list { grid-template-columns: 1fr; }
+    }
+
+    .symptom-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      padding: 20px;
+      border: 1px solid rgba(201,169,110,0.2);
+      border-radius: 2px;
+      background: rgba(201,169,110,0.04);
+      transition: border-color 0.3s, background 0.3s;
+    }
+
+    .symptom-item:hover {
+      border-color: rgba(201,169,110,0.45);
+      background: rgba(201,169,110,0.08);
+    }
+
+    .symptom-dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--gold);
+      flex-shrink: 0;
+      margin-top: 7px;
+    }
+
+    .symptom-item span {
+      font-size: 0.95rem;
+      font-weight: 300;
+      color: rgba(245,239,230,0.8);
+      line-height: 1.6;
+    }
+
+    /* ── APPROCCIO ── */
+    .approach-block {
+      background: #f4efe7;
+      padding: 80px 24px;
+    }
+
+    .approach-inner {
+      max-width: 720px;
+      margin: 0 auto;
+    }
+
+    .approach-card {
+      display: flex;
+      gap: 28px;
+      align-items: flex-start;
+      padding: 32px 0;
+      border-bottom: 1px solid rgba(201,169,110,0.25);
+    }
+
+    .approach-card:first-of-type { border-top: 1px solid rgba(201,169,110,0.25); }
+
+    .approach-num {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 3.5rem;
+      font-weight: 300;
+      color: rgba(201,169,110,0.35);
+      line-height: 1;
+      flex-shrink: 0;
+      width: 52px;
+    }
+
+    .approach-text h3 {
+      font-family: 'Cormorant Garamond', serif;
+      font-weight: 600;
+      font-size: 1.35rem;
+      color: var(--dark);
+      margin-bottom: 8px;
+    }
+
+    .approach-text p {
+      font-size: 0.95rem;
+      font-weight: 300;
+      color: var(--muted);
+      line-height: 1.75;
+    }
+
+    /* ── TESTIMONIANZE ── */
+    .testimonials-block {
+      padding: 80px 24px;
+      background: var(--cream);
+    }
+
+    .testimonials-inner {
+      max-width: 720px;
+      margin: 0 auto;
+    }
+
+    .testimonials-inner h2 {
+      font-family: 'Cormorant Garamond', serif;
+      font-weight: 300;
+      font-size: clamp(2rem, 5vw, 3rem);
+      color: var(--dark);
+      margin-bottom: 44px;
+      line-height: 1.2;
+    }
+
+    .testimonial-card {
+      padding: 32px;
+      border-left: 2px solid var(--gold);
+      margin-bottom: 28px;
+      background: white;
+      box-shadow: 0 2px 20px rgba(0,0,0,0.05);
+    }
+
+    .testimonial-card blockquote {
+      font-family: 'Cormorant Garamond', serif;
+      font-style: italic;
+      font-size: 1.2rem;
+      font-weight: 300;
+      line-height: 1.7;
+      color: var(--text);
+      margin-bottom: 16px;
+    }
+
+    .testimonial-card cite {
+      font-size: 0.82rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--gold-dark);
+      font-style: normal;
+      font-weight: 500;
+    }
+
+    /* ── CHI SONO ── */
+    .bio-block {
+      background: var(--dark);
+      padding: 80px 24px;
+    }
+
+    .bio-inner {
+      max-width: 720px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: center;
+    }
+
+    @media (max-width: 600px) {
+      .bio-inner { grid-template-columns: 1fr; gap: 36px; }
+    }
+
+    .bio-text .section-label { color: var(--gold); }
+
+    .bio-text h2 {
+      font-family: 'Cormorant Garamond', serif;
+      font-weight: 300;
+      font-size: clamp(1.8rem, 4vw, 2.6rem);
+      color: #f5efe6;
+      margin-bottom: 24px;
+      line-height: 1.25;
+    }
+
+    .bio-text h2 em { font-style: italic; color: var(--gold-light); }
+
+    .bio-text p {
+      font-size: 0.95rem;
+      font-weight: 300;
+      line-height: 1.85;
+      color: rgba(245,239,230,0.7);
+      margin-bottom: 14px;
+    }
+
+    .bio-visual {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .bio-stat {
+      padding: 24px;
+      border: 1px solid rgba(201,169,110,0.2);
+      text-align: center;
+      transition: border-color 0.3s;
+    }
+    .bio-stat:hover { border-color: rgba(201,169,110,0.5); }
+
+    .bio-stat-num {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 2.8rem;
+      font-weight: 300;
+      color: var(--gold);
+      line-height: 1;
+      display: block;
+      margin-bottom: 6px;
+    }
+
+    .bio-stat-label {
+      font-size: 0.78rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: rgba(245,239,230,0.5);
+      font-weight: 300;
+    }
+
+    /* ── CTA FINALE ── */
+    .cta-block {
+      padding: 100px 24px;
+      background: linear-gradient(160deg, #f4efe7 0%, var(--cream) 100%);
+      text-align: center;
+    }
+
+    .cta-block h2 {
+      font-family: 'Cormorant Garamond', serif;
+      font-weight: 300;
+      font-size: clamp(2.2rem, 6vw, 3.8rem);
+      color: var(--dark);
+      margin-bottom: 20px;
+      line-height: 1.15;
+    }
+
+    .cta-block h2 em { font-style: italic; color: var(--gold-dark); }
+
+    .cta-block p {
+      font-size: 1rem;
+      font-weight: 300;
+      color: var(--muted);
+      margin-bottom: 44px;
+      line-height: 1.8;
+      max-width: 480px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .btn-cta {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      padding: 20px 44px;
+      background: var(--dark);
+      color: var(--gold-light);
+      text-decoration: none;
+      font-family: 'Jost', sans-serif;
+      font-weight: 400;
+      font-size: 0.9rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      border-radius: 2px;
+      transition: background 0.3s, transform 0.2s, box-shadow 0.3s;
+      box-shadow: 0 6px 32px rgba(26,22,18,0.2);
+    }
+
+    .btn-cta:hover {
+      background: #2e261e;
+      transform: translateY(-3px);
+      box-shadow: 0 12px 40px rgba(26,22,18,0.3);
+    }
+
+    /* ── FOOTER ── */
+    footer {
+      background: var(--dark);
+      padding: 40px 24px;
+      text-align: center;
+      border-top: 1px solid rgba(201,169,110,0.15);
+    }
+
+    footer p {
+      font-size: 0.8rem;
+      font-weight: 300;
+      color: rgba(245,239,230,0.35);
+      line-height: 1.8;
+      margin-bottom: 4px;
+    }
+
+    footer a {
+      color: rgba(201,169,110,0.6);
+      text-decoration: none;
+    }
+    footer a:hover { color: var(--gold); }
+
+    /* ── SCROLL REVEAL ── */
+    .reveal {
+      opacity: 0;
+      transform: translateY(24px);
+      transition: opacity 0.8s ease, transform 0.8s ease;
+    }
+    .reveal.visible {
+      opacity: 1;
+      transform: none;
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- ── HERO ── -->
+<section class="hero" aria-label="Kundalini Yoga Siena">
+  <div class="hero-bg"></div>
+  <div class="hero-ring"></div>
+  <div class="hero-ring"></div>
+  <div class="hero-ring"></div>
+
+  <div class="hero-content">
+    <p class="hero-eyebrow">Kundalini Yoga · Siena</p>
+    <h1>Libera il corpo<br>dallo <em>stress cronico</em></h1>
+    <p class="hero-sub">
+      Una pratica antica, un approccio preciso.<br>
+      Piccoli gruppi. Risultati profondi.
+    </p>
+    <a class="btn-primary" href="https://wa.me/393772850908?text=Ciao%20Alessandra%2C%20vorrei%20sapere%20di%20più%20sul%20Kundalini%20Yoga" target="_blank" rel="noopener">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+        <path d="M12 0C5.373 0 0 5.373 0 12c0 2.124.555 4.118 1.524 5.847L0 24l6.345-1.505A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 01-5.003-1.368l-.36-.214-3.73.885.918-3.636-.234-.374A9.786 9.786 0 012.182 12C2.182 6.57 6.57 2.182 12 2.182S21.818 6.57 21.818 12 17.43 21.818 12 21.818z"/>
+      </svg>
+      Scrivimi su WhatsApp
+    </a>
+  </div>
+</section>
+
+<!-- ── INTRO ── -->
+<section class="section reveal">
+  <span class="section-label">Il problema</span>
+  <h2>Lo stress non è solo<br><em>nella testa</em></h2>
+  <p>
+    Il sistema nervoso sotto pressione cronica altera la respirazione, blocca il corpo,
+    disturba il sonno. I sintomi si accumulano finché non diventano impossibili da ignorare.
+  </p>
+  <p>
+    <strong>Il Kundalini Yoga non lavora sui sintomi: lavora sulla causa.</strong>
+    Kriya specifiche, pranayama e meditazione riattivano la risposta parasimpatica
+    e restituiscono al corpo la sua capacità di regolarsi.
+  </p>
+  <p>
+    Non cerchiamo la perfezione della tecnica. I blocchi fisici sono spesso blocchi emotivi: il corpo somatizza tensioni, stress e vissuti non elaborati, trasformandoli in dolori reali e persistenti. Le tecniche del Kundalini Yoga lavorano in profondità, sciogliendo queste memorie corporee e permettendo al sistema nervoso di ritrovare il suo equilibrio naturale. Solo quando il corpo si libera da questi strati profondi, la tecnica può affinarsi da sola.
+  </p>
+  <p>
+    E se bastasse un'ora a settimana per iniziare a sentire davvero la differenza?
+  </p>
+</section>
+
+<div class="ornament">· · ·</div>
+
+<!-- ── SINTOMI ── -->
+<div class="symptoms-block">
+  <div class="symptoms-inner reveal">
+    <span class="section-label">Ti riconosci?</span>
+    <h2>Questi segnali<br><em>li conosci bene</em></h2>
+    <div class="symptom-list">
+      <div class="symptom-item"><div class="symptom-dot"></div><span>Tensione cronica a collo e spalle</span></div>
+      <div class="symptom-item"><div class="symptom-dot"></div><span>Mente sempre attiva, difficile spegnerla</span></div>
+      <div class="symptom-item"><div class="symptom-dot"></div><span>Sonno disturbato o non riposante</span></div>
+      <div class="symptom-item"><div class="symptom-dot"></div><span>Stanchezza costante anche dopo il riposo</span></div>
+      <div class="symptom-item"><div class="symptom-dot"></div><span>Ansia e irritabilità senza causa apparente</span></div>
+      <div class="symptom-item"><div class="symptom-dot"></div><span>Sensazione di non riuscire a fermarsi</span></div>
+    </div>
+  </div>
+</div>
+
+<!-- ── COME FUNZIONA ── -->
+<div class="approach-block">
+  <div class="approach-inner reveal">
+    <span class="section-label">Il percorso</span>
+    <h2 style="font-family:'Cormorant Garamond',serif;font-weight:300;font-size:clamp(2rem,5vw,3rem);color:var(--dark);margin-bottom:40px;line-height:1.2;">
+      Tre passi verso<br><em style="color:var(--gold-dark);">un cambiamento reale</em>
+    </h2>
+
+    <div class="approach-card">
+      <div class="approach-num">1</div>
+      <div class="approach-text">
+        <h3>Scrivimi su WhatsApp</h3>
+        <p>Mi racconti la tua situazione. Capisco di cosa hai bisogno e ti guido nella scelta del percorso più adatto: classe o sessione individuale.</p>
+      </div>
+    </div>
+
+    <div class="approach-card">
+      <div class="approach-num">2</div>
+      <div class="approach-text">
+        <h3>Prima lezione</h3>
+        <p>Ambiente intimo e accogliente. Lavoriamo con kriya mirate, respiro consapevole e meditazione. Nessuna esperienza richiesta.</p>
+      </div>
+    </div>
+
+    <div class="approach-card">
+      <div class="approach-num">3</div>
+      <div class="approach-text">
+        <h3>Senti la differenza</h3>
+        <p>Più calma, energia stabile, chiarezza mentale. Il corpo inizia a regolarsi. Quello che cambia dentro si vede fuori.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ── TESTIMONIANZE ── -->
+<div class="testimonials-block">
+  <div class="testimonials-inner reveal">
+    <span class="section-label">Chi pratica con me</span>
+    <h2>Cosa dicono<br>i miei studenti</h2>
+
+    <div class="testimonial-card">
+      <blockquote>
+        "Ho iniziato un corso di Yoga Kundalini. È stato il percorso giusto fatto nel momento giusto. Prima di iniziare venivo da un periodo di stress e confusione. Durante il corso ho imparato ad accogliere lo sforzo, concentrandomi sulla forza del respiro. Posso dire ora di aver acquisito maggior calma e più presenza a me stesso."
+      </blockquote>
+      <cite>Luigi, Asciano</cite>
+    </div>
+
+    <div class="testimonial-card">
+      <blockquote>
+        "Quando ho cominciato, mi sentivo rigido e disallineato. Ero incapace di rilassarmi totalmente, continuando a rimanere contratto nelle spalle, nel collo e nel bacino. La pratica mi ha insegnato a conferire forza e ritmo alla mia immaginazione con la concentrazione e il respiro. I mantra e gli esercizi mi hanno aiutato a sciogliere le contrazioni e a concentrarmi sui motivi profondi della mia rigidità, dovuta molto ad ansia e stress. Esperienza assolutamente consigliata."
+      </blockquote>
+      <cite>Mariano, Siena</cite>
+    </div>
+
+    <div class="testimonial-card">
+      <blockquote>
+        "Mi trovo benissimo. La maestra Alessandra Cota mi ha guidato dal primo momento con grande professionalità ed empatia verso questa disciplina per me nuova. L'ambiente è intimo e accogliente, sereno e pulito. Le lezioni terminano con la meditazione e il rilassamento. Consigliato per chi vuole fare molto esercizio fisico, mentale e di meditazione."
+      </blockquote>
+      <cite>Francesca, Colle Val d'Elsa</cite>
+    </div>
+  </div>
+</div>
+
+<!-- ── CHI SONO ── -->
+<div class="bio-block">
+  <div class="bio-inner reveal">
+    <div class="bio-text">
+      <span class="section-label">Chi sono</span>
+      <h2>Alessandra Cota<br><em>Mahan Deva Kaur</em></h2>
+      <p>
+        Ho iniziato a insegnare più di trent'anni fa, con la ginnastica dolce. Nel tempo il mio percorso si è approfondito attraverso diversi stili di yoga e meditazione, fino ad approdare al Kundalini Yoga: la pratica che più di ogni altra lavora in profondità sul sistema nervoso e sulla trasformazione interiore.
+      </p>
+      <p>
+        Laureata in Scienze Motorie, con una lunga pratica personale in Hatha, Raja, Ashtanga e Vipassana.
+      </p>
+      <p>
+        Non insegno tecniche. Insegno trasformazione.
+        Ogni lezione è calibrata su chi hai davanti: il tuo sistema nervoso, la tua storia, il tuo corpo.
+      </p>
+    </div>
+
+    <div class="bio-visual">
+      <div class="bio-stat">
+        <span class="bio-stat-num">30+</span>
+        <span class="bio-stat-label">anni di pratica</span>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- ── CTA ── -->
+<div class="cta-block">
+  <span class="section-label reveal" style="display:block;margin-bottom:18px;">Inizia ora</span>
+  <h2 class="reveal">Lo stress non<br>sparisce <em>da solo</em></h2>
+  <p class="reveal">
+    Ma puoi imparare a gestirlo, con un metodo che funziona.
+    Il primo passo è semplice: scrivimi.
+  </p>
+  <a class="btn-cta reveal" href="https://wa.me/393772850908?text=Ciao%20Alessandra%2C%20vorrei%20sapere%20di%20più%20sul%20Kundalini%20Yoga" target="_blank" rel="noopener">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+      <path d="M12 0C5.373 0 0 5.373 0 12c0 2.124.555 4.118 1.524 5.847L0 24l6.345-1.505A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 01-5.003-1.368l-.36-.214-3.73.885.918-3.636-.234-.374A9.786 9.786 0 012.182 12C2.182 6.57 6.57 2.182 12 2.182S21.818 6.57 21.818 12 17.43 21.818 12 21.818z"/>
+    </svg>
+    Scrivimi su WhatsApp
+  </a>
+</div>
+
+<!-- ── FOOTER ── -->
+<footer>
+  <p>Alessandra Cota · Mahan Deva Kaur · Kundalini Yoga Siena</p>
+  <p>
+    <a href="https://alessandracota.it" target="_blank">alessandracota.it</a> &nbsp;·&nbsp;
+    <a href="https://yogasiena.org" target="_blank">yogasiena.org</a> &nbsp;·&nbsp;
+    <a href="https://facebook.com/share/1FZ4RViPGX/" target="_blank">Facebook</a> &nbsp;·&nbsp;
+    <a href="https://instagram.com/yoga_siena_kundalini" target="_blank">Instagram</a>
+  </p>
+  <p style="margin-top:12px;">+39 377 285 0908</p>
+</footer>
+
+<script>
+  // Scroll reveal
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.classList.add('visible');
+        observer.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.12 });
+
+  document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+</script>
+
+</body>
+</html>
