@@ -24,30 +24,27 @@
     body { font-family: 'Jost', sans-serif; color: var(--text); background: var(--cream); line-height: 1.7; }
     img { max-width: 100%; display: block; }
     .container { width: min(1080px, 92vw); margin: 0 auto; }
-    .site-header { position: sticky; top: 0; z-index: 10; background: rgba(252,250,246,0.95); backdrop-filter: blur(8px); border-bottom: 1px solid var(--line); }
-    .topbar { display: flex; align-items: center; justify-content: space-between; padding: 14px 0; gap: 20px; }
-    .brand-logo-link { display: inline-flex; align-items: center; }
-    .brand-logo { width: 64px; height: auto; }
-    .brand { font-family: 'Cormorant Garamond', serif; font-size: 1.35rem; letter-spacing: 0.06em; text-decoration: none; color: var(--text); }
-    /* Stile per i link della navbar quando non sono in modalità mobile */
-    .nav-link {
-      color: var(--muted) !important;
-      font-size: .82rem;
-      letter-spacing: .14em;
-      text-transform: uppercase;
-      font-family: 'Jost', sans-serif;
-    }
+    .site-header { position: sticky; top: 0; z-index: 1000; background: rgba(252,250,246,.95); backdrop-filter: blur(8px); border-bottom: 1px solid var(--line); padding: 14px 0; }
+    .brand { font-family:'Cormorant Garamond',serif; font-size: 1.35rem; letter-spacing: .06em; color: var(--text); text-decoration: none; }
+    .nav { display: flex; gap: 18px; flex-wrap: wrap; }
+    .nav a { text-decoration: none; color: var(--muted); font-size: .82rem; letter-spacing: .14em; text-transform: uppercase; }
+    .nav a.active, .nav a:hover { color: var(--gold-dark); }
 
-    .nav-link.active, .nav-link:hover {
-      color: var(--gold-dark) !important;
-    }
-
-    /* Fix per mobile: evita che il menù si sovrapponga al contenuto */
+    /* Stile per la tendina aperta su mobile (fondamentale per vederlo come le altre pagine) */
     @media (max-width: 991px) {
       .navbar-collapse {
-        background: var(--cream);
+        background: #fcfaf6; 
         padding: 20px;
-        z-index: 1000;
+        border-bottom: 1px solid rgba(138,109,59,0.22);
+      }
+      .nav {
+        flex-direction: column; 
+        gap: 10px;
+      }
+      .nav a {
+        font-size: 0.9rem;
+        padding: 10px 0;
+        border-bottom: 1px solid rgba(138,109,59,0.1);
       }
     }
     .hero { position: relative; min-height: 72svh; display: grid; place-items: center; text-align: center; overflow: hidden; }
@@ -106,21 +103,21 @@
         <span class="brand" style="font-family:'Cormorant Garamond',serif; font-size: 1.35rem; letter-spacing: .06em; color: var(--text);">Kundalini Yoga Siena</span>
       </a>
 
-      <!-- Pulsante Hamburger -->
+      <!-- Pulsante Hamburger (visibile solo su mobile/tablet) -->
       <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
 
-      <!-- Menu corretto -->
+      <!-- Menu che collassa -->
       <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="chi_sono.html">Chi sono</a></li>
-          <li class="nav-item"><a class="nav-link" href="kundalini_yoga.html">Kundalini Yoga</a></li>
-          <li class="nav-item"><a class="nav-link" href="lezioni.html">Lezioni</a></li>
-          <li class="nav-item"><a class="nav-link" href="funnel.html">Percorso</a></li>
-          <li class="nav-item"><a class="nav-link" href="https://kundaliniyogasiena.blogspot.com/" target="_blank" rel="noopener">Blog</a></li>
-        </ul>
+        <nav class="nav ml-auto" aria-label="Navigazione principale">
+          <a class="active" href="index.html">Home</a>
+          <a href="chi_sono.html">Chi sono</a>
+          <a href="kundalini_yoga.html">Kundalini Yoga</a>
+          <a href="lezioni.html">Lezioni</a>
+          <a href="funnel.html">Percorso</a>
+          <a href="https://kundaliniyogasiena.blogspot.com/" target="_blank" rel="noopener">Blog</a>
+        </nav>
       </div>
     </nav>
   </div>
