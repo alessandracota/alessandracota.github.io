@@ -25,6 +25,8 @@
     .container { width: min(1080px, 92vw); margin: 0 auto; }
     .site-header { position: sticky; top: 0; z-index: 10; background: rgba(252,250,246,0.95); backdrop-filter: blur(8px); border-bottom: 1px solid var(--line); }
     .topbar { display: flex; align-items: center; justify-content: space-between; padding: 14px 0; gap: 20px; }
+    .brand-logo-link { display: inline-flex; align-items: center; }
+    .brand-logo { width: 64px; height: auto; }
     .brand { font-family: 'Cormorant Garamond', serif; font-size: 1.35rem; letter-spacing: 0.06em; text-decoration: none; color: var(--text); }
     .nav { display: flex; gap: 18px; flex-wrap: wrap; justify-content: flex-end; }
     .nav a { text-decoration: none; color: var(--muted); font-size: 0.82rem; letter-spacing: 0.14em; text-transform: uppercase; }
@@ -78,6 +80,9 @@
 <body>
   <header class="site-header">
     <div class="container topbar">
+      <a class="brand-logo-link" href="index.html" aria-label="Logo Kundalini Yoga Siena">
+        <img class="brand-logo" src="assets/images/logo.png" alt="Logo Kundalini Yoga Siena - Alessandra Cota">
+      </a>
       <a class="brand" href="index.html">Kundalini Yoga Siena</a>
       <nav class="nav" aria-label="Navigazione principale">
         <a class="active" href="index.html">Home</a>
@@ -189,7 +194,12 @@ ritrovando vitalità ed energia, attraverso pratica antica, concreta e profonda.
           </svg>
           Instagram
         </a>
-        <a href="https://facebook.com/share/1FZ4RViPGX/" target="_blank" rel="noopener">Facebook</a>
+        <a href="https://facebook.com/share/1FZ4RViPGX/" target="_blank" rel="noopener">
+          <svg class="footer-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M22 12a10 10 0 10-11.56 9.88v-6.99H7.9V12h2.54V9.8c0-2.5 1.49-3.88 3.77-3.88 1.09 0 2.22.19 2.22.19v2.45h-1.25c-1.23 0-1.62.76-1.62 1.54V12h2.76l-.44 2.89h-2.32v6.99A10 10 0 0022 12z"/>
+          </svg>
+          Facebook
+        </a>
       </div>
       <p class="footer-meta">+39 377 285 0908</p>
     </div>
