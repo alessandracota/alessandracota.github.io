@@ -1,279 +1,142 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="it">
 <head>
-	<!-- Global site tag (gtag.js) - Google Analytics
-	<script async src="https://www.googletagmanager.com/gtag/js?id=G-Z7SPC9PB8K"></script>
-	<script>
-	  window.dataLayer = window.dataLayer || [];
-	  function gtag(){dataLayer.push(arguments);}
-	  gtag('js', new Date());
-
-	  gtag('config', 'G-Z7SPC9PB8K', { 'anonymize_ip': true });
-	</script>-->
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-206119545-1">
-	</script>
-	<script>
-	  window.dataLayer = window.dataLayer || [];
-	  function gtag(){dataLayer.push(arguments);}
-	  gtag('js', new Date());
-
-	  gtag('config', 'UA-206119545-1', { 'anonymize_ip': true });
-	</script>-->
-
-	<script src="https://kit.fontawesome.com/520ee0e1c9.js" crossorigin="anonymous"></script>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-
-	<title>Kundalini Yoga Siena</title>
-	<meta name="viewport" content="initial-scale = 1.0, maximum-scale = 2.0, user-scalable = yes, width = device-width">
-	<meta name="description" content="Kundalini Yoga Siena - Aiuto tutti coloro che si sentono sopraffatti dagli impegni quotidiani a gestire lo stress e ad utilizzare il loro tempo in maniera efficace, attraverso le tecniche del Kundalini Yoga.">
-	<meta name="keywords" content="kundalini yoga siena, alessandra cota, yoga all'aperto, yoga siena, insegnanti di yoga, insegnanti di yoga a siena, mahan devakaur, insengante di ginnastica, sport, salute, benessere, scienze motorie, isef, yoga, kundalini, alessandracota yoga">
-
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-	<link rel="stylesheet" media="all" href="assets/css/main.css" />
-	<link rel="stylesheet" media="all" href="assets/bootstrap/css/bootstrap.css" />
-	<!--<link rel="stylesheet" href="assets/css/flexslider.css" type="text/css" media="screen" />
-	<link rel="stylesheet" href="assets/css/slider.css" type="text/css" media="screen" />
-	<link rel="stylesheet" href="assets/css/slick.css"/>
-	<link rel="stylesheet" href="assets/css/animate.css"/>-->
-	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,500;1,600;1,700;1,900&family=Yellowtail&display=swap" rel="stylesheet">
-	<script src="assets/js/jquery-2.2.0.js"></script>
-	<script src="assets/bootstrap/js/bootstrap.min.js"></script>
-	<!--<script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>-->
-	<!--<script defer src="assets/js/jquery.flexslider.js"></script>
-	<script src="assets/js/wow.min.js"></script>
-	<script src="assets/js/slick.min.js"></script>
-	<script src="assets/js/allgen.js"></script>-->
-
-	<!-- <script type="text/javascript">
-	var _iub = _iub || [];
-	_iub.csConfiguration = {"consentOnContinuedBrowsing":false,"whitelabel":false,"lang":"it","siteId":2334559,"cookiePolicyId":56089037,"cookiePolicyUrl":"https://www.alessandracota.it/cookie_policy.html", "banner":{ "position":"float-bottom-center","rejectButtonColor":"#0073CE","rejectButtonCaptionColor":"white","textColor":"black","backgroundColor":"white" }};
-	</script>
-	<script type="text/javascript" src="//cdn.iubenda.com/cs/iubenda_cs.js" charset="UTF-8" async></script> -->
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kundalini Yoga Siena</title>
+  <meta name="description" content="Kundalini Yoga Siena - Aiuto a gestire stress e ritrovare energia attraverso le tecniche del Kundalini Yoga.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --gold: #c9a96e;
+      --gold-light: #e8d5b0;
+      --gold-dark: #8a6d3b;
+      --cream: #fcfaf6;
+      --paper: #f6f1e8;
+      --text: #3a3028;
+      --muted: #726250;
+      --line: rgba(138,109,59,0.22);
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Jost', sans-serif; color: var(--text); background: var(--cream); line-height: 1.7; }
+    img { max-width: 100%; display: block; }
+    .container { width: min(1080px, 92vw); margin: 0 auto; }
+    .site-header { position: sticky; top: 0; z-index: 10; background: rgba(252,250,246,0.95); backdrop-filter: blur(8px); border-bottom: 1px solid var(--line); }
+    .topbar { display: flex; align-items: center; justify-content: space-between; padding: 14px 0; gap: 20px; }
+    .brand { font-family: 'Cormorant Garamond', serif; font-size: 1.35rem; letter-spacing: 0.06em; text-decoration: none; color: var(--text); }
+    .nav { display: flex; gap: 18px; flex-wrap: wrap; justify-content: flex-end; }
+    .nav a { text-decoration: none; color: var(--muted); font-size: 0.82rem; letter-spacing: 0.14em; text-transform: uppercase; }
+    .nav a:hover, .nav a.active { color: var(--gold-dark); }
+    .hero { position: relative; min-height: 72svh; display: grid; place-items: center; text-align: center; overflow: hidden; }
+    .hero img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center; opacity: 0.28; }
+    .hero::after { content: ''; position: absolute; inset: 0; background: linear-gradient(150deg, rgba(252,250,246,0.96), rgba(246,241,232,0.88)); }
+    .hero-content { position: relative; z-index: 1; width: min(760px, 92vw); padding: 42px 0; }
+    .eyebrow { font-size: 0.72rem; letter-spacing: 0.35em; text-transform: uppercase; color: var(--gold-dark); margin-bottom: 20px; }
+    h1 { font-family: 'Cormorant Garamond', serif; font-size: clamp(2.4rem, 6vw, 4.6rem); font-weight: 300; line-height: 1.06; margin-bottom: 18px; }
+    h1 em { font-style: italic; color: var(--gold-dark); }
+    .lead { color: var(--muted); max-width: 620px; margin: 0 auto 34px; font-weight: 300; }
+    .btn { display: inline-flex; align-items: center; gap: 8px; text-decoration: none; padding: 14px 26px; font-size: 0.78rem; letter-spacing: 0.15em; text-transform: uppercase; border: 1px solid var(--gold-dark); color: var(--text); background: var(--gold-light); }
+    .btn:hover { background: #f0e2c7; }
+    .section { padding: 80px 0; }
+    .section.alt { background: var(--paper); }
+    .section-label { display: inline-block; font-size: 0.65rem; letter-spacing: 0.35em; text-transform: uppercase; color: var(--gold-dark); margin-bottom: 18px; }
+    .section h2 { font-family: 'Cormorant Garamond', serif; font-size: clamp(2rem, 5vw, 3.2rem); font-weight: 300; line-height: 1.15; margin-bottom: 20px; }
+    .section h2 em { color: var(--gold-dark); }
+    .grid-2 { display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 36px; align-items: center; }
+    .cards { display: grid; gap: 16px; margin-top: 24px; }
+    .card { background: #fff; border: 1px solid var(--line); padding: 22px; }
+    .card h3 { font-family: 'Cormorant Garamond', serif; font-size: 1.45rem; font-weight: 400; margin-bottom: 8px; }
+    .card p, .section p { color: var(--muted); }
+    .video-wrap { border: 1px solid var(--line); background: #fff; padding: 14px; }
+    .video-wrap iframe { width: 100%; aspect-ratio: 16 / 9; border: 0; }
+    .actions { text-align: center; margin-top: 36px; }
+    footer { border-top: 1px solid var(--line); padding: 36px 0; text-align: center; background: #fff; }
+    footer p, footer a { color: var(--muted); font-size: 0.9rem; text-decoration: none; }
+    footer a:hover { color: var(--gold-dark); }
+    @media (max-width: 780px) {
+      .topbar { flex-direction: column; align-items: flex-start; }
+      .nav { justify-content: flex-start; }
+      .grid-2 { grid-template-columns: 1fr; }
+      .section { padding: 64px 0; }
+    }
+  </style>
 </head>
-
 <body>
-	<div id="allpage">
-<header>
-	<div class="container">
-	<div class="row">
-		<div class="hidden-xs col-xl-2 col-lg-2 col-md-2 col-sm-2 col-2 margine_logo">
-			<img src="assets/images/logo.png" alt="Logo Kundalini Yoga Siena - Alessandra Cota">
-		</div>
-		<div class="col-xl-1 col-lg-1 col-md-1 col-sm-1 col-xs-1 col-1"></div>
-		<nav class="col-xl-9 col-lg-9 col-md-9 col-sm-9 col-xs-10 col-9 navbar navbar-default" id="mainmenu">
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</button>
-				<span class="visible-xs navbar-brand">Kundalini Yoga Siena</span>
-			</div>
-			<div class="navbar-collapse collapse">
-	  			<ul class="nav navbar-nav">
-	    			<li class="visible-xs" style="text-align: center; margin-top: 20px; margin-bottom: 20px;">
-	    				<img src="assets/images/logo_bg.png" alt="Logo Alessandra Cota Kundalini Yoga Siena" width="15%">
-	    			</li>
-	    			<li><a href="index.html">Home</a></li>
-	    			<li><a href="chi_sono.html">Chi sono</a></li>
-	    			<li><a href="lezioni.html">Lezione gratuita</a></li>
-					<li><a href="https://kundaliniyogasiena.blogspot.com/">Blog</a></li>
-	    			<!--
-						PROG. RETI
-	    				<li><a href="shop.php">Shop</a></li>
-	    			-->
-	  			</ul>
-  			</div>
-		</nav>
-		<!--<div class="col-xl-1 col-lg-1 col-md-1 col-sm-1 col-xs-1 col-1"></div>-->
-	</div>
-	</div>
-</header>
+  <header class="site-header">
+    <div class="container topbar">
+      <a class="brand" href="index.html">Kundalini Yoga Siena</a>
+      <nav class="nav" aria-label="Navigazione principale">
+        <a class="active" href="index.html">Home</a>
+        <a href="chi_sono.html">Chi sono</a>
+        <a href="kundalini_yoga.html">Kundalini Yoga</a>
+        <a href="lezioni.html">Lezioni</a>
+        <a href="funnel.html">Percorso</a>
+        <a href="https://kundaliniyogasiena.blogspot.com/" target="_blank" rel="noopener">Blog</a>
+      </nav>
+    </div>
+  </header>
 
+  <section class="hero" aria-label="Presentazione Kundalini Yoga Siena">
+    <img src="assets/images/alessandra_cota_yoga_crete_senesi.jpg" alt="Yoga nelle Crete Senesi">
+    <div class="hero-content">
+      <p class="eyebrow">Kundalini Yoga Siena</p>
+      <h1>Ritrova energia<br>e <em>stabilita interiore</em></h1>
+      <p class="lead">Aiuto chi si sente sopraffatto dagli impegni quotidiani a gestire stress e tensioni con una pratica antica, concreta e profonda.</p>
+      <a class="btn" href="https://wa.me/393772850908?text=Ciao%20Alessandra%2C%20vorrei%20sapere%20di%20pi%C3%B9%20sul%20Kundalini%20Yoga" target="_blank" rel="noopener">Scrivimi su WhatsApp</a>
+    </div>
+  </section>
 
-<!-- <div class="container">
-	<div class="row">
-		<nav class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 navbar navbar-default" id="mainmenu">
-  		<ul class="nav navbar-nav">
-    		<li><a href="chi_sono.html"><span style="font-size: smaller;">Chi sono</span></a></li>
-    		<li><a href="#contattami"><span style="font-size: smaller;">Prenota una lezione</span></a></li>
-  		</ul>
-		</nav>
-	</div>
-</div> -->
+  <section class="section">
+    <div class="container grid-2">
+      <div>
+        <span class="section-label">Benessere completo</span>
+        <h2>Una pratica che lavora su <em>corpo, respiro e mente</em></h2>
+        <p>Il Kundalini Yoga agisce su sistema nervoso, respirazione e concentrazione. Ogni lezione combina kriya, pranayama, meditazione e rilassamento per sciogliere accumuli fisici ed emotivi.</p>
+        <p>La pratica non richiede esperienza iniziale: si adatta alla persona e ti accompagna passo dopo passo verso un equilibrio piu stabile.</p>
+      </div>
+      <div>
+        <img src="assets/images/c_allievi_yoga.jpg" alt="Allievi durante una pratica di Kundalini Yoga">
+      </div>
+    </div>
+  </section>
 
-<div class="container-fluid">
-	<div class="row">
-		<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 img_albero">
-			<img src="assets/images/alessandra_cota_yoga_crete_senesi.jpg" alt="Yoga nelle crete senesi - Kundalini Yoga Siena">
-			<div class="yoga_digitale">
-				Ciao, <br>mi chiamo Alessandra Cota.<br><br>
-				Aiuto tutti coloro che si sentono sopraffatti dagli impegni quotidiani <br>a gestire lo stress e ad utilizzare il loro tempo in maniera efficace, <br>ritrovando vitalità ed energia, attraverso le tecniche del Kundalini Yoga.
-			</div>
-			<!--<div class="hidden-xs button2action">
-				<button type="button" class="btn btn-secondary btn-lg">
-					<a href="#contattami">Prenota una lezione <br>gratuita</a>
-				</button>
-			</div>
-			<div class="visible-xs button2action">
-				<button type="button" class="btn btn-secondary btn-sm">
-					<a href="#contattami">Prenota una lezione <br>gratuita</a>
-				</button>
-			</div>-->
-		</div>
-	</div>
-</div>
+  <section class="section alt">
+    <div class="container">
+      <span class="section-label">Lezione con Alessandra</span>
+      <h2>Guarda una pratica completa</h2>
+      <div class="video-wrap">
+        <iframe src="https://www.youtube-nocookie.com/embed/bszAZgT2eww" title="Lezione Kundalini Yoga Siena" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <div class="actions">
+        <a class="btn" href="kundalini_yoga.html">Scopri il Kundalini Yoga</a>
+      </div>
+    </div>
+  </section>
 
-<div class="container">
-	<div class="row">
-		<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 lezione" style="text-align: center;">
-			<h2>A lezione con <br> Alessandra Cota</h2>
-		</div>
-	</div>
-</div>
+  <section class="section">
+    <div class="container">
+      <span class="section-label">Contattami</span>
+      <h2>Inizia con una <em>prima lezione gratuita</em></h2>
+      <div class="cards">
+        <article class="card">
+          <h3>WhatsApp</h3>
+          <p><a href="https://wa.me/393772850908" target="_blank" rel="noopener">+39 377 285 0908</a></p>
+        </article>
+        <article class="card">
+          <h3>Email</h3>
+          <p><a href="mailto:info@alessandracota.it">info@alessandracota.it</a></p>
+        </article>
+      </div>
+    </div>
+  </section>
 
-<div class="container">
-	<div class="embed-responsive embed-responsive-16by9">
-		<iframe class="embed-responsive-item" src="https://www.youtube-nocookie.com/embed/bszAZgT2eww" title="YouTube video player | Kundalini Yoga Siena | Lezione con Alessandra Cota" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-	</div>
-</div>
-
-<!--<div class="container">
-	<div class="row">
-		<!- width="1170" height="627" ->
-		<div class="hidden-xs hidden-sm col-xl-12 col-lg-12 col-md-12 col-12">
-			<iframe style="width:100%; height: 34vw;" src="https://www.youtube-nocookie.com/embed/bszAZgT2eww" title="YouTube video player - Lezione con Alessandra Cota" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-		</div>
-<!-	<video width="1170" height="627" controls> ->
-
-		<div class="visible-xs visible-sm">
-			<iframe style="width:100%; height: 52vw;" src="https://www.youtube-nocookie.com/embed/bszAZgT2eww" title="YouTube video player - Lezione con Alessandra Cota" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-		</div>
-<!-	<video width="1170" height="627" controls> ->
-
-	</div>
-</div>-->
-
-<div class="container">
-	<div class="row">
-		<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 corso"><h2>IL KUNDALINI YOGA</h2></div>
-	</div>
-</div>
-
-<div class="container">
-	<div class="row">
-		<div class="col-xl-5 col-lg-5 col-md-5 col-sm-12 col-5 explain"><h6>Permette di ottenere benefici in profondità: <br><br><br>
-			<ul>
-				<li>a livello fisico: armonizza il sistema endocrino, rafforza il sistema nervoso, l’apparato cardiocircolatorio, digestivo e linfatico, rende il corpo sano e forte</li>
-				<br>
-				<li>a livello mentale ed emozionale: consente di dominare le emozioni, diminuire lo stress e l’ansia</li>
-				<br>
-				<li>aumenta la capacità di concentrazione donando l’esperienza di una profonda calma interiore</li>
-			</ul>
-			</h6> 
-		</div> 
-		<div class="col-xl-2 col-lg-2 col-md-2 col-sm-1 col-2"></div>
-		<div class="col-xl-5 col-lg-5 col-md-5 col-sm-10 col-5 img_c"><img src="assets/images/c_allievi_yoga.jpg" alt="Allievi Yoga all'aperto - Kundalini Yoga Siena" width="100%"></div>
-		<div class="visible-sm col-sm-1"></div>
-	</div>
-</div>
-
-<div class="container">
-	<div class="row">
-		<div class="col-xl-7 col-lg-7 col-md-7 col-sm-12 col-7 explain"><h6><br><br><br><br>È una disciplina armoniosa e potente in  cui si combinano: <br><br><br>
-			<ul>
-				<li>esercizi respiratori (pranayama)</li>
- 				<br>
-				<li>esercizi statici e dinamici (asana)</li>
- 				<br>
-				<li>ripetizioni di suoni e frasi (mantra)</li>
- 				<br>
-				<li>meditazione e rilassamento (dhyana)</li>
-			</ul></h6>
-		</div>
-
-		<div class="col-xl-1 col-lg-1 col-md-1 col-sm-1 col-1"></div>
-		<div class="col-xl-4 col-lg-4 col-md-4 col-sm-10 col-4 img_respirazione"><img src="assets/images/respirazione_yoga.jpg" alt="Respirazione Kundalini Yoga - Kundalini Yoga Siena" width="100%"></div>
-		<div class="visible-sm col-sm-1"></div>
-	</div>
-</div>
-
-<div class="container">
-	<div class="button2action text-center">
-		<button type="button" class="btn btn-secondary btn-lg">
-			<a href="kundalini_yoga.html">Scopri di più sul <br> Kundalini Yoga</a>
-		</button>
-	</div>
-</div>
-
-<div class="container">
-	<div class="row">
-		<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 POP" id="contattami" style="text-align: center;"><h2>Contattami per la tua <br> prima lezione gratuita</h2>
-		</div>
-	</div>
-</div>
-
-<div class="container">
-	<div class="row">
-		<div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-3"></div>
-		<div class="col-xl-1 col-lg-1 col-md-1 col-sm-1 col-xs-3 col-1 icon"><i class="fab fa-whatsapp-square"></i></div>
-		<div class="col-xl-1 col-lg-1 col-md-1 col-sm-1 col-1"></div>
-		<div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-xs-8 col-4 numero">
-			<p><a href="https://wa.me/393276509385">Contattami su whatsapp: +39 327 650 9385</a></p>
-		</div>
-		<div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-xs-1 col-3"></div>
-	</div>
-</div>
-
-<div class="container">
-	<div class="row">
-		<div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-3"></div>
-		<div class="col-xl-1 col-lg-1 col-md-1 col-sm-1 col-xs-3 col-1 icon"><i class="fas fa-envelope"></i></div>
-		<div class="col-xl-1 col-lg-1 col-md-1 col-sm-1 col-1"></div>
-		<div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-xs-8 col-4 emaila">
-			<p><a href="mailto: alessandracota68@gmail.com">info@alessandracota.it</a></p>
-		</div>
-		<div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-xs-1 col-3"></div>
-	</div>
-</div>
-			
-<div class="container">
-	<div class="row">
-		<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 where" style="text-align: center;"><h4>Oppure contattami su <br>
-		Instagram e Facebook!</h4></div>
-	</div>
-</div>
-
-<div class="container">
-	<div class="row">
-		<div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-xs-2 col-3"></div>
-		<div class="text-center col-xl-2 col-lg-2 col-md-2 col-sm-2 col-xs-2 col-2 iconette">
-			<a href="https://www.instagram.com/alessandra.cota">
-				<i class="fab fa-instagram-square"></i>
-			</a>
-		</div>
-		<div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-xs-2 col-2"></div>
-		<div class="text-center col-xl-2 col-lg-2 col-md-2 col-sm-2 col-xs-2 col-2 iconette">
-			<a href="https://www.facebook.com/kundaliniyogasiena">
-				<i class="fab fa-facebook-square"></i>
-			</a>
-		</div>
-		<div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-xs-4 col-3"></div>	
-	</div>
-</div>
-
-<footer>
-	<br><br>
-		<a href="https://www.iubenda.com/privacy-policy/56089037" class="iubenda-black iubenda-noiframe iubenda-embed iubenda-noiframe " title="Privacy Policy ">Privacy Policy</a><script type="text/javascript">(function (w,d) {var loader = function () {var s = d.createElement("script"), tag = d.getElementsByTagName("script")[0]; s.src="https://cdn.iubenda.com/iubenda.js"; tag.parentNode.insertBefore(s,tag);}; if(w.addEventListener){w.addEventListener("load", loader, false);}else if(w.attachEvent){w.attachEvent("onload", loader);}else{w.onload = loader;}})(window, document);</script>
-
-			<a href="cookie_policy.html" style="color: #000;">Cookie Policy</a>
-</footer>
-</div>
+  <footer>
+    <div class="container">
+      <p>Alessandra Cota · Mahan Deva Kaur · Kundalini Yoga Siena</p>
+      <p><a href="https://www.iubenda.com/privacy-policy/56089037" target="_blank" rel="noopener">Privacy Policy</a> · <a href="cookie_policy.html">Cookie Policy</a> · <a href="https://instagram.com/yoga_siena_kundalini" target="_blank" rel="noopener">Instagram</a> · <a href="https://facebook.com/share/1FZ4RViPGX/" target="_blank" rel="noopener">Facebook</a></p>
+    </div>
+  </footer>
 </body>
 </html>
-
-</script>
