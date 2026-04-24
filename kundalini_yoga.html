@@ -44,8 +44,9 @@
     .footer-social { display:flex; justify-content:center; gap:18px; flex-wrap:wrap; margin-top:10px; }
     .footer-social a { display:inline-flex; align-items:center; gap:8px; }
     .footer-icon { width:16px; height:16px; color:var(--gold-dark); }
-    footer a:hover { color:var(--gold-dark); }
-    @media (max-width:768px) { h1 { font-size:2rem; } .hidden-xs { display:none; } .visible-xs { display:block !important; } }
+    a, a:visited { color:var(--text); text-decoration:none; }
+    a:hover, a:focus { color:var(--gold-dark); text-decoration:none; }
+    @media (max-width:768px) { h1 { font-size:2rem; } }
     @media (max-width:780px){ .topbar{flex-direction:column;align-items:flex-start;} }
     @media (max-width:390px){ .footer-social{gap:12px;} .footer-social a{font-size:.84rem;} .footer-meta{font-size:.84rem;} }
   </style>
@@ -82,13 +83,8 @@
           <p>Il termine Kundalini richiama un'energia latente, descritta come avvolta alla base della colonna, pronta a esprimersi quando il praticante sviluppa presenza, disciplina e ascolto.</p>
         </div>
         <div class="col-md-1"></div>
-        <div class="col-md-5 col-sm-12 hidden-xs">
+        <div class="col-md-5 col-sm-12">
           <div class="frame"><img src="assets/images/a_posa_yoga.jpg" alt="Yoga al tramonto" class="img-fluid"></div>
-        </div>
-      </div>
-      <div class="row" style="margin-top:40px;">
-        <div class="visible-xs text-center col-12">
-          <div class="frame" style="max-width:400px; margin:0 auto;"><img src="assets/images/a_posa_yoga.jpg" alt="Yoga al tramonto" class="img-fluid"></div>
         </div>
       </div>
     </div>
@@ -97,7 +93,7 @@
   <section class="section" style="background:var(--paper); border-top:1px solid var(--line); border-bottom:1px solid var(--line);">
     <div class="container">
       <div class="row">
-        <div class="col-md-5 col-sm-12 hidden-xs">
+        <div class="col-md-5 col-sm-12">
           <div class="poem">
             Crediamo nei nostri sogni<br>
             E la cosa piu bella che abbiamo.<br>
@@ -109,16 +105,6 @@
         </div>
         <div class="col-md-1"></div>
         <div class="col-md-6 col-sm-12">
-          <div class="visible-xs" style="margin-bottom:20px;">
-            <div class="poem">
-              Crediamo nei nostri sogni<br>
-              E la cosa piu bella che abbiamo.<br>
-              Coltiviamoli, custodiamoli, difendiamoli.<br>
-              Ma soprattutto rendiamoli concreti,<br>
-              con il cuore aperto e i piedi ben radicati.<br><br>
-              - Annacarla Cocco
-            </div>
-          </div>
           <p>La pratica costante trasforma l'energia potenziale in azione consapevole. Questo passaggio, nel tempo, porta a una vita piu stabile, creativa e centrata.</p>
           <p>Ogni lezione e un lavoro su respiro, concentrazione e vitalita: un invito concreto a ritrovare equilibrio nel corpo e chiarezza nella mente.</p>
           <div class="cta"><a class="btn" href="lezioni.html#contattami">Vieni a praticare con me</a></div>

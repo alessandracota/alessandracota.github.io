@@ -60,7 +60,8 @@
     .footer-social { display: flex; justify-content: center; gap: 18px; flex-wrap: wrap; margin-top: 10px; }
     .footer-social a { display: inline-flex; align-items: center; gap: 8px; }
     .footer-icon { width: 16px; height: 16px; color: var(--gold-dark); }
-    footer a:hover { color: var(--gold-dark); }
+    a, a:visited { color: var(--text); text-decoration: none; }
+    a:hover, a:focus { color: var(--gold-dark); text-decoration: none; }
     @media (max-width: 780px) {
       .topbar { flex-direction: column; align-items: flex-start; }
       .nav { justify-content: flex-start; }
@@ -156,7 +157,12 @@ ritrovando vitalità ed energia, attraverso pratica antica, concreta e profonda.
           <p><a href="https://instagram.com/yoga_siena_kundalini" target="_blank" rel="noopener">@yoga_siena_kundalini</a></p>
         </article>
         <article class="card">
-          <h3>Email</h3>
+          <h3 class="contact-title">
+            <svg class="contact-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M2.25 4.5h19.5A2.25 2.25 0 0124 6.75v10.5A2.25 2.25 0 0121.75 19.5H2.25A2.25 2.25 0 010 17.25V6.75A2.25 2.25 0 012.25 4.5zm0 1.5a.75.75 0 00-.75.75v.39l10.5 6.3 10.5-6.3v-.39a.75.75 0 00-.75-.75H2.25zm19.5 4.03l-8.87 5.322a2.25 2.25 0 01-2.26 0L1.75 10.03v7.22a.75.75 0 00.75.75h19.5a.75.75 0 00.75-.75v-7.22z"/>
+            </svg>
+            Email
+          </h3>
           <p><a href="mailto:info@alessandracota.it">info@alessandracota.it</a></p>
         </article>
       </div>
