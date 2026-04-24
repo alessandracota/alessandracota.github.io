@@ -49,17 +49,28 @@
     .card { background: #fff; border: 1px solid var(--line); padding: 22px; }
     .card h3 { font-family: 'Cormorant Garamond', serif; font-size: 1.45rem; font-weight: 400; margin-bottom: 8px; }
     .card p, .section p { color: var(--muted); }
+    .contact-title { display: inline-flex; align-items: center; gap: 10px; }
+    .contact-icon { width: 22px; height: 22px; color: var(--gold-dark); flex-shrink: 0; }
     .video-wrap { border: 1px solid var(--line); background: #fff; padding: 14px; }
     .video-wrap iframe { width: 100%; aspect-ratio: 16 / 9; border: 0; }
     .actions { text-align: center; margin-top: 36px; }
     footer { border-top: 1px solid var(--line); padding: 36px 0; text-align: center; background: #fff; }
     footer p, footer a { color: var(--muted); font-size: 0.9rem; text-decoration: none; }
+    .footer-meta { margin-top: 8px; }
+    .footer-social { display: flex; justify-content: center; gap: 18px; flex-wrap: wrap; margin-top: 10px; }
+    .footer-social a { display: inline-flex; align-items: center; gap: 8px; }
+    .footer-icon { width: 16px; height: 16px; color: var(--gold-dark); }
     footer a:hover { color: var(--gold-dark); }
     @media (max-width: 780px) {
       .topbar { flex-direction: column; align-items: flex-start; }
       .nav { justify-content: flex-start; }
       .grid-2 { grid-template-columns: 1fr; }
       .section { padding: 64px 0; }
+    }
+    @media (max-width: 390px) {
+      .footer-social { gap: 12px; }
+      .footer-social a { font-size: 0.84rem; }
+      .footer-meta { font-size: 0.84rem; }
     }
   </style>
 </head>
@@ -83,12 +94,16 @@
     <div class="hero-content">
       <p class="eyebrow">Kundalini Yoga Siena</p>
       <h1>Ritrova energia<br>e <em>stabilita interiore</em></h1>
-      <p class="lead">Aiuto chi si sente sopraffatto dagli impegni quotidiani a gestire stress e tensioni con una pratica antica, concreta e profonda.</p>
-      <a class="btn" href="https://wa.me/393772850908?text=Ciao%20Alessandra%2C%20vorrei%20sapere%20di%20pi%C3%B9%20sul%20Kundalini%20Yoga" target="_blank" rel="noopener">Scrivimi su WhatsApp</a>
+      <p class="lead">Ciao, mi chiamo Alessandra Cota.
+Aiuto tutti coloro che si sentono sopraffatti dagli impegni quotidiani
+a gestire lo stress e ad utilizzare il loro tempo in maniera efficace,
+ritrovando vitalità ed energia, attraverso pratica antica, concreta e profonda.</p>
+      <a class="btn" href="https://wa.me/393276509385?text=Ciao%20Alessandra%2C%20vorrei%20sapere%20di%20pi%C3%B9%20sul%20Kundalini%20Yoga" target="_blank" rel="noopener">Scrivimi su WhatsApp</a>
     </div>
   </section>
 
-  <section class="section">
+  <section class="section">A lezione con
+Alessandra Cota
     <div class="container grid-2">
       <div>
         <span class="section-label">Benessere completo</span>
@@ -105,7 +120,7 @@
   <section class="section alt">
     <div class="container">
       <span class="section-label">Lezione con Alessandra</span>
-      <h2>Guarda una pratica completa</h2>
+      <h2>A lezione con Alessandra Cota</h2>
       <div class="video-wrap">
         <iframe src="https://www.youtube-nocookie.com/embed/bszAZgT2eww" title="Lezione Kundalini Yoga Siena" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>
@@ -121,8 +136,25 @@
       <h2>Inizia con una <em>prima lezione gratuita</em></h2>
       <div class="cards">
         <article class="card">
-          <h3>WhatsApp</h3>
-          <p><a href="https://wa.me/393772850908" target="_blank" rel="noopener">+39 377 285 0908</a></p>
+          <h3 class="contact-title">
+            <svg class="contact-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+              <path d="M12 0C5.373 0 0 5.373 0 12c0 2.124.555 4.118 1.524 5.847L0 24l6.345-1.505A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 01-5.003-1.368l-.36-.214-3.73.885.918-3.636-.234-.374A9.786 9.786 0 012.182 12C2.182 6.57 6.57 2.182 12 2.182S21.818 6.57 21.818 12 17.43 21.818 12 21.818z"/>
+            </svg>
+            WhatsApp
+          </h3>
+          <p><a href="https://wa.me/393276509385" target="_blank" rel="noopener">+39 327 650 9385</a></p>
+        </article>
+        <article class="card">
+          <h3 class="contact-title">
+            <svg class="contact-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M12 2.163c3.204 0 3.584.012 4.849.07 1.366.062 2.633.332 3.608 1.307.975.975 1.245 2.242 1.307 3.608.058 1.265.07 1.645.07 4.849s-.012 3.584-.07 4.849c-.062 1.366-.332 2.633-1.307 3.608-.975.975-2.242 1.245-3.608 1.307-1.265.058-1.645.07-4.849.07s-3.584-.012-4.849-.07c-1.366-.062-2.633-.332-3.608-1.307-.975-.975-1.245-2.242-1.307-3.608C2.175 15.584 2.163 15.204 2.163 12s.012-3.584.07-4.849c.062-1.366.332-2.633 1.307-3.608.975-.975 2.242-1.245 3.608-1.307C8.416 2.175 8.796 2.163 12 2.163zm0-2.163C8.741 0 8.333.013 7.052.072 5.775.131 4.62.388 3.635 1.373 2.65 2.358 2.393 3.513 2.334 4.79 2.275 6.071 2.262 6.479 2.262 9.738v4.524c0 3.259.013 3.667.072 4.948.059 1.277.316 2.432 1.301 3.417.985.985 2.14 1.242 3.417 1.301 1.281.059 1.689.072 4.948.072s3.667-.013 4.948-.072c1.277-.059 2.432-.316 3.417-1.301.985-.985 1.242-2.14 1.301-3.417.059-1.281.072-1.689.072-4.948V9.738c0-3.259-.013-3.667-.072-4.948-.059-1.277-.316-2.432-1.301-3.417C19.38.388 18.225.131 16.948.072 15.667.013 15.259 0 12 0z"/>
+              <path d="M12 5.838A6.162 6.162 0 1018.162 12 6.169 6.169 0 0012 5.838zm0 10.162A4 4 0 1116 12a4.005 4.005 0 01-4 4z"/>
+              <circle cx="18.406" cy="5.594" r="1.44"/>
+            </svg>
+            Instagram
+          </h3>
+          <p><a href="https://instagram.com/yoga_siena_kundalini" target="_blank" rel="noopener">@yoga_siena_kundalini</a></p>
         </article>
         <article class="card">
           <h3>Email</h3>
@@ -135,7 +167,26 @@
   <footer>
     <div class="container">
       <p>Alessandra Cota · Mahan Deva Kaur · Kundalini Yoga Siena</p>
-      <p><a href="https://www.iubenda.com/privacy-policy/56089037" target="_blank" rel="noopener">Privacy Policy</a> · <a href="cookie_policy.html">Cookie Policy</a> · <a href="https://instagram.com/yoga_siena_kundalini" target="_blank" rel="noopener">Instagram</a> · <a href="https://facebook.com/share/1FZ4RViPGX/" target="_blank" rel="noopener">Facebook</a></p>
+      <p class="footer-meta"><a href="https://www.iubenda.com/privacy-policy/56089037" target="_blank" rel="noopener">Privacy Policy</a> · <a href="cookie_policy.html">Cookie Policy</a></p>
+      <div class="footer-social">
+        <a href="https://wa.me/393276509385" target="_blank" rel="noopener">
+          <svg class="footer-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+            <path d="M12 0C5.373 0 0 5.373 0 12c0 2.124.555 4.118 1.524 5.847L0 24l6.345-1.505A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 01-5.003-1.368l-.36-.214-3.73.885.918-3.636-.234-.374A9.786 9.786 0 012.182 12C2.182 6.57 6.57 2.182 12 2.182S21.818 6.57 21.818 12 17.43 21.818 12 21.818z"/>
+          </svg>
+          WhatsApp
+        </a>
+        <a href="https://instagram.com/yoga_siena_kundalini" target="_blank" rel="noopener">
+          <svg class="footer-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M12 2.163c3.204 0 3.584.012 4.849.07 1.366.062 2.633.332 3.608 1.307.975.975 1.245 2.242 1.307 3.608.058 1.265.07 1.645.07 4.849s-.012 3.584-.07 4.849c-.062 1.366-.332 2.633-1.307 3.608-.975.975-2.242 1.245-3.608 1.307-1.265.058-1.645.07-4.849.07s-3.584-.012-4.849-.07c-1.366-.062-2.633-.332-3.608-1.307-.975-.975-1.245-2.242-1.307-3.608C2.175 15.584 2.163 15.204 2.163 12s.012-3.584.07-4.849c.062-1.366.332-2.633 1.307-3.608.975-.975 2.242-1.245 3.608-1.307C8.416 2.175 8.796 2.163 12 2.163zm0-2.163C8.741 0 8.333.013 7.052.072 5.775.131 4.62.388 3.635 1.373 2.65 2.358 2.393 3.513 2.334 4.79 2.275 6.071 2.262 6.479 2.262 9.738v4.524c0 3.259.013 3.667.072 4.948.059 1.277.316 2.432 1.301 3.417.985.985 2.14 1.242 3.417 1.301 1.281.059 1.689.072 4.948.072s3.667-.013 4.948-.072c1.277-.059 2.432-.316 3.417-1.301.985-.985 1.242-2.14 1.301-3.417.059-1.281.072-1.689.072-4.948V9.738c0-3.259-.013-3.667-.072-4.948-.059-1.277-.316-2.432-1.301-3.417C19.38.388 18.225.131 16.948.072 15.667.013 15.259 0 12 0z"/>
+            <path d="M12 5.838A6.162 6.162 0 1018.162 12 6.169 6.169 0 0012 5.838zm0 10.162A4 4 0 1116 12a4.005 4.005 0 01-4 4z"/>
+            <circle cx="18.406" cy="5.594" r="1.44"/>
+          </svg>
+          Instagram
+        </a>
+        <a href="https://facebook.com/share/1FZ4RViPGX/" target="_blank" rel="noopener">Facebook</a>
+      </div>
+      <p class="footer-meta">+39 327 650 9385</p>
     </div>
   </footer>
 </body>
