@@ -242,3 +242,27 @@ li a:hover{
   width: 64px;
   height: auto;
 }
+
+/* Stile per la tendina aperta su mobile */
+@media (max-width: 991px) {
+  .navbar-collapse {
+    background: #fcfaf6; /* Il tuo colore --cream */
+    padding: 20px;
+    border-bottom: 1px solid rgba(138,109,59,0.22);
+  }
+  .nav {
+    flex-direction: column; /* Incolonna i link */
+    gap: 10px;
+  }
+  .nav a {
+    font-size: 0.9rem;
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(138,109,59,0.1);
+  }
+}
+
+/* Allineamento pulsante hamburger */
+.navbar-toggler {
+  padding: 0.25rem 0.5rem;
+  font-size: 1rem;
+}
