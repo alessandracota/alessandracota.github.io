@@ -7,14 +7,15 @@
   <meta name="description" content="Scopri cos'e il Kundalini Yoga: una disciplina olistica che rafforza corpo, mente e sistema nervoso.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
   <style>
     :root { --gold:#c9a96e; --gold-dark:#8a6d3b; --cream:#fcfaf6; --paper:#f6f1e8; --text:#3a3028; --muted:#726250; --line:rgba(138,109,59,0.22); }
     * { box-sizing:border-box; margin:0; padding:0; }
     body { font-family:'Jost',sans-serif; background:var(--cream); color:var(--text); line-height:1.75; }
-    .container { width:min(980px,92vw); margin:0 auto; }
-    .site-header { position:sticky; top:0; z-index:10; background:rgba(252,250,246,.95); backdrop-filter:blur(8px); border-bottom:1px solid var(--line); }
-    .topbar { display:flex; justify-content:space-between; align-items:center; gap:20px; padding:14px 0; }
+    .container { max-width:1170px; margin:0 auto; padding:0 15px; }
+    .site-header { position:sticky; top:0; z-index:10; background:rgba(252,250,246,.95); backdrop-filter:blur(8px); border-bottom:1px solid var(--line); padding:14px 0; }
+    .topbar { display:flex; justify-content:space-between; align-items:center; gap:20px; }
     .brand { text-decoration:none; color:var(--text); font-family:'Cormorant Garamond',serif; font-size:1.35rem; letter-spacing:.06em; }
     .nav { display:flex; gap:18px; flex-wrap:wrap; }
     .nav a { text-decoration:none; color:var(--muted); font-size:.82rem; text-transform:uppercase; letter-spacing:.14em; }
@@ -28,11 +29,15 @@
     .section { padding:72px 0; }
     .section p { color:var(--muted); margin-bottom:16px; }
     .section strong { color:var(--text); }
-    .split { display:grid; grid-template-columns:1.1fr .9fr; gap:34px; align-items:start; }
-    .frame { border:1px solid var(--line); background:#fff; padding:10px; }
-    .poem { background:var(--paper); border:1px solid var(--line); padding:22px; font-family:'Cormorant Garamond',serif; font-size:1.26rem; line-height:1.55; }
-    .cta { text-align:center; margin-top:28px; }
-    .btn { display:inline-flex; padding:14px 26px; border:1px solid var(--gold-dark); background:#efe0c1; color:var(--text); text-decoration:none; text-transform:uppercase; letter-spacing:.14em; font-size:.78rem; }
+    .section p { color:var(--muted); margin-bottom:14px; font-size:1rem; line-height:1.6; }
+    .section strong { color:var(--text); font-weight:500; }
+    .frame { border:1px solid var(--line); background:#fff; padding:8px; }
+    .frame img { width:100%; height:auto; display:block; }
+    .poem { background:var(--paper); border:1px solid var(--line); padding:20px; font-family:'Cormorant Garamond',serif; font-size:1.15rem; line-height:1.55; color:var(--text); }
+    .cta { text-align:center; margin-top:26px; }
+    .btn { display:inline-block; padding:12px 24px; border:1px solid var(--gold-dark); background:#efe0c1; color:var(--text); text-decoration:none; text-transform:uppercase; letter-spacing:.1em; font-size:.85rem; transition:all 0.3s; }
+    .btn:hover { background:var(--gold-dark); color:#fff; }
+    .hidden-xs { display:block; }
     footer { border-top:1px solid var(--line); padding:36px 0; text-align:center; background:#fff; }
     footer p,footer a { color:var(--muted); font-size:.9rem; line-height:1.8; text-decoration:none; }
     .footer-meta { margin-top:8px; }
@@ -40,7 +45,8 @@
     .footer-social a { display:inline-flex; align-items:center; gap:8px; }
     .footer-icon { width:16px; height:16px; color:var(--gold-dark); }
     footer a:hover { color:var(--gold-dark); }
-    @media (max-width:780px){ .topbar{flex-direction:column;align-items:flex-start;} .split{grid-template-columns:1fr;} }
+    @media (max-width:768px) { h1 { font-size:2rem; } .hidden-xs { display:none; } .visible-xs { display:block !important; } }
+    @media (max-width:780px){ .topbar{flex-direction:column;align-items:flex-start;} }
     @media (max-width:390px){ .footer-social{gap:12px;} .footer-social a{font-size:.84rem;} .footer-meta{font-size:.84rem;} }
   </style>
 </head>
@@ -67,31 +73,56 @@
   </section>
 
   <section class="section">
-    <div class="container split">
-      <div>
-        <p>Il Kundalini Yoga rafforza la muscolatura, mantiene elastica la colonna vertebrale, sostiene il sistema endocrino e aiuta a stabilizzare il sistema nervoso.</p>
-        <p>La meditazione rende la mente piu ferma e concentrata, facilitando un atteggiamento di lucidita anche nelle situazioni sfidanti.</p>
-        <p>Secondo la tradizione yogica, l'essere umano non e solo materia: esistono livelli energetici sottili che possono essere risvegliati e armonizzati attraverso la pratica.</p>
-        <p>Il termine Kundalini richiama un'energia latente, descritta come avvolta alla base della colonna, pronta a esprimersi quando il praticante sviluppa presenza, disciplina e ascolto.</p>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-sm-12">
+          <p>Il Kundalini Yoga rafforza la muscolatura, mantiene elastica la colonna vertebrale, sostiene il sistema endocrino e aiuta a stabilizzare il sistema nervoso.</p>
+          <p>La meditazione rende la mente più ferma e concentrata, facilitando un atteggiamento di lucidita anche nelle situazioni sfidanti.</p>
+          <p>Secondo la tradizione yogica, l'essere umano non è solo materia: esistono livelli energetici sottili che possono essere risvegliati e armonizzati attraverso la pratica.</p>
+          <p>Il termine Kundalini richiama un'energia latente, descritta come avvolta alla base della colonna, pronta a esprimersi quando il praticante sviluppa presenza, disciplina e ascolto.</p>
+        </div>
+        <div class="col-md-1"></div>
+        <div class="col-md-5 col-sm-12 hidden-xs">
+          <div class="frame"><img src="assets/images/a_posa_yoga.jpg" alt="Yoga al tramonto" class="img-fluid"></div>
+        </div>
       </div>
-      <div class="frame"><img src="assets/images/a_posa_yoga.jpg" alt="Yoga al tramonto"></div>
+      <div class="row" style="margin-top:40px;">
+        <div class="visible-xs text-center col-12">
+          <div class="frame" style="max-width:400px; margin:0 auto;"><img src="assets/images/a_posa_yoga.jpg" alt="Yoga al tramonto" class="img-fluid"></div>
+        </div>
+      </div>
     </div>
   </section>
 
   <section class="section" style="background:var(--paper); border-top:1px solid var(--line); border-bottom:1px solid var(--line);">
-    <div class="container split">
-      <div class="poem">
-        Crediamo nei nostri sogni<br>
-        E la cosa piu bella che abbiamo.<br>
-        Coltiviamoli, custodiamoli, difendiamoli.<br>
-        Ma soprattutto rendiamoli concreti,<br>
-        con il cuore aperto e i piedi ben radicati.<br><br>
-        - Annacarla Cocco
-      </div>
-      <div>
-        <p>La pratica costante trasforma l'energia potenziale in azione consapevole. Questo passaggio, nel tempo, porta a una vita piu stabile, creativa e centrata.</p>
-        <p>Ogni lezione e un lavoro su respiro, concentrazione e vitalita: un invito concreto a ritrovare equilibrio nel corpo e chiarezza nella mente.</p>
-        <div class="cta"><a class="btn" href="lezioni.html#contattami">Vieni a praticare con me</a></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-5 col-sm-12 hidden-xs">
+          <div class="poem">
+            Crediamo nei nostri sogni<br>
+            E la cosa piu bella che abbiamo.<br>
+            Coltiviamoli, custodiamoli, difendiamoli.<br>
+            Ma soprattutto rendiamoli concreti,<br>
+            con il cuore aperto e i piedi ben radicati.<br><br>
+            - Annacarla Cocco
+          </div>
+        </div>
+        <div class="col-md-1"></div>
+        <div class="col-md-6 col-sm-12">
+          <div class="visible-xs" style="margin-bottom:20px;">
+            <div class="poem">
+              Crediamo nei nostri sogni<br>
+              E la cosa piu bella che abbiamo.<br>
+              Coltiviamoli, custodiamoli, difendiamoli.<br>
+              Ma soprattutto rendiamoli concreti,<br>
+              con il cuore aperto e i piedi ben radicati.<br><br>
+              - Annacarla Cocco
+            </div>
+          </div>
+          <p>La pratica costante trasforma l'energia potenziale in azione consapevole. Questo passaggio, nel tempo, porta a una vita piu stabile, creativa e centrata.</p>
+          <p>Ogni lezione e un lavoro su respiro, concentrazione e vitalita: un invito concreto a ritrovare equilibrio nel corpo e chiarezza nella mente.</p>
+          <div class="cta"><a class="btn" href="lezioni.html#contattami">Vieni a praticare con me</a></div>
+        </div>
       </div>
     </div>
   </section>
@@ -101,7 +132,7 @@
       <p>Alessandra Cota · Mahan Deva Kaur · Kundalini Yoga Siena</p>
       <p class="footer-meta"><a href="https://www.iubenda.com/privacy-policy/56089037" target="_blank" rel="noopener">Privacy Policy</a> · <a href="cookie_policy.html">Cookie Policy</a></p>
       <div class="footer-social">
-        <a href="https://wa.me/393276509385" target="_blank" rel="noopener">
+        <a href="https://wa.me/393772850908" target="_blank" rel="noopener">
           <svg class="footer-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
             <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
             <path d="M12 0C5.373 0 0 5.373 0 12c0 2.124.555 4.118 1.524 5.847L0 24l6.345-1.505A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 01-5.003-1.368l-.36-.214-3.73.885.918-3.636-.234-.374A9.786 9.786 0 012.182 12C2.182 6.57 6.57 2.182 12 2.182S21.818 6.57 21.818 12 17.43 21.818 12 21.818z"/>
@@ -118,7 +149,7 @@
         </a>
         <a href="https://facebook.com/share/1FZ4RViPGX/" target="_blank" rel="noopener">Facebook</a>
       </div>
-      <p class="footer-meta">+39 327 650 9385</p>
+      <p class="footer-meta">+39 377 285 0908</p>
     </div>
   </footer>
 </body>
