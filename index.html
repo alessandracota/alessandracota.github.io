@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kundalini Yoga Siena</title>
-  <meta name="description" content="Kundalini Yoga Siena - Aiuto a gestire stress e ritrovare energia attraverso le tecniche del Kundalini Yoga.">
+  <title>Kundalini Yoga Siena – Energia, Equilibrio e Consapevolezza</title>
+  <meta name="description" content="Kundalini Yoga a Siena con Alessandra Cota. Una pratica concreta per gestire lo stress, ritrovare energia e stabilità interiore.">
   <link rel="stylesheet" media="all" href="assets/css/main.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -37,8 +37,11 @@
     h1 { font-family: 'Cormorant Garamond', serif; font-size: clamp(2.4rem, 6vw, 4.6rem); font-weight: 300; line-height: 1.06; margin-bottom: 18px; }
     h1 em { font-style: italic; color: var(--gold-dark); }
     .lead { color: var(--muted); max-width: 620px; margin: 0 auto 34px; font-weight: 300; }
+    .btn-group-hero { display: flex; justify-content: center; gap: 12px; flex-wrap: wrap; }
     .btn { display: inline-flex; align-items: center; gap: 8px; text-decoration: none; padding: 14px 26px; font-size: 0.78rem; letter-spacing: 0.15em; text-transform: uppercase; border: 1px solid var(--gold-dark); color: var(--text); background: var(--gold-light); }
     .btn:hover { background: #f0e2c7; }
+    .btn-primary-cta { background: var(--gold-dark); color: #fff; border-color: var(--gold-dark); }
+    .btn-primary-cta:hover { background: #6e5630; color: #fff; }
     .section { padding: 80px 0; }
     .section.alt { background: var(--paper); }
     .section-label { display: inline-block; font-size: 0.65rem; letter-spacing: 0.35em; text-transform: uppercase; color: var(--gold-dark); margin-bottom: 18px; }
@@ -54,6 +57,14 @@
     .video-wrap { border: 1px solid var(--line); background: #fff; padding: 14px; }
     .video-wrap iframe { width: 100%; aspect-ratio: 16 / 9; border: 0; }
     .actions { text-align: center; margin-top: 36px; }
+    /* Benefit list */
+    .benefit-list { list-style: none; padding: 0; margin: 20px 0 24px; }
+    .benefit-list li { color: var(--muted); padding: 8px 0 8px 22px; position: relative; border-bottom: 1px solid var(--line); }
+    .benefit-list li::before { content: '—'; position: absolute; left: 0; color: var(--gold-dark); }
+    .key-phrase { font-family: 'Cormorant Garamond', serif; font-size: 1.25rem; font-style: italic; color: var(--text); border-left: 2px solid var(--gold); padding-left: 18px; margin: 24px 0; line-height: 1.5; }
+    /* Closing */
+    .closing { background: var(--paper); padding: 60px 0; text-align: center; }
+    .closing blockquote { font-family: 'Cormorant Garamond', serif; font-size: clamp(1.4rem, 3vw, 2rem); font-weight: 300; font-style: italic; color: var(--text); max-width: 720px; margin: 0 auto 36px; line-height: 1.4; }
     footer { border-top: 1px solid var(--line); padding: 36px 0; text-align: center; background: #fff; }
     footer p, footer a { color: var(--muted); font-size: 0.9rem; text-decoration: none; }
     .footer-meta { margin-top: 8px; }
@@ -68,82 +79,125 @@
   </style>
 </head>
 <body>
+
   <header class="site-header">
-  <div class="container">
-    <nav class="navbar navbar-expand-lg navbar-light p-0">
-      <!-- Logo e Brand -->
-      <a class="navbar-brand d-flex align-items-center" href="index.html">
-        <img class="brand-logo" src="assets/images/logo_bg.png" alt="Logo" style="width: 50px; height: auto; margin-right: 10px;">
-        <span class="brand" style="font-family:'Cormorant Garamond',serif; font-size: 1.35rem; letter-spacing: .06em; color: var(--text);">Kundalini Yoga Siena</span>
-      </a>
-
-      <!-- Pulsante Hamburger (visibile solo su mobile/tablet) -->
-      <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <!-- Menu che collassa -->
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <nav class="nav ml-auto" aria-label="Navigazione principale">
-          <a class="active" href="index.html">Home</a>
-          <a href="chi_sono.html">Chi sono</a>
-          <a href="kundalini_yoga.html">Kundalini Yoga</a>
-          <a href="lezioni.html">Lezioni</a>
-          <a href="funnel.html">Percorso</a>
-          <a href="https://kundaliniyogasiena.blogspot.com/" target="_blank" rel="noopener">Blog</a>
-        </nav>
-      </div>
-    </nav>
-  </div>
-</header>
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-light p-0">
+        <a class="navbar-brand d-flex align-items-center" href="index.html">
+          <img class="brand-logo" src="assets/images/logo_bg.png" alt="Logo" style="width: 50px; height: auto; margin-right: 10px;">
+          <span class="brand" style="font-family:'Cormorant Garamond',serif; font-size: 1.35rem; letter-spacing: .06em; color: var(--text);">Kundalini Yoga Siena</span>
+        </a>
+        <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <nav class="nav ml-auto" aria-label="Navigazione principale">
+            <a class="active" href="index.html">Home</a>
+            <a href="chi_sono.html">Chi sono</a>
+            <a href="kundalini_yoga.html">Kundalini Yoga</a>
+            <a href="lezioni.html">Lezioni</a>
+            <a href="funnel.html">Percorso</a>
+            <a href="https://kundaliniyogasiena.blogspot.com/" target="_blank" rel="noopener">Blog</a>
+          </nav>
+        </div>
+      </nav>
+    </div>
+  </header>
 
 
+  <!-- HERO -->
   <section class="hero" aria-label="Presentazione Kundalini Yoga Siena">
     <img src="assets/images/alessandra_cota_yoga_crete_senesi.jpg" alt="Yoga nelle Crete Senesi">
     <div class="hero-content">
       <p class="eyebrow">Kundalini Yoga Siena</p>
-      <h1>Ritrova energia<br>e <em>stabilità interiore</em></h1>
-      <p class="lead">Ciao, mi chiamo Alessandra Cota.
-Aiuto tutti coloro che si sentono sopraffatti dagli impegni quotidiani
-a gestire lo stress e ad utilizzare il loro tempo in maniera efficace,
-ritrovando vitalità ed energia, attraverso una pratica antica, concreta e profonda.</p>
-      <a class="btn" href="https://wa.me/393772850908?text=Ciao%20Alessandra%2C%20vorrei%20prenotare%20una%20lezione%20di%20prova" target="_blank" rel="noopener">Scrivimi su WhatsApp</a>
+      <h1>Kundalini Yoga a Siena per risvegliare <em>energia, equilibrio e consapevolezza</em></h1>
+      <p class="lead">Una pratica concreta e profonda che agisce sul sistema nervoso e ti accompagna passo dopo passo verso maggiore stabilità interiore.</p>
+      <a class="btn btn-primary-cta" href="https://wa.me/393772850908?text=Ciao%20Alessandra%2C%20vorrei%20prenotare%20la%20prima%20lezione" target="_blank" rel="noopener">Prenota la tua prima lezione</a>
     </div>
   </section>
 
+
+  <!-- SEZIONE 1 – COS'È IL KUNDALINI YOGA -->
   <section class="section">
     <div class="container">
       <div class="row align-items-center">
-      <div class="col-lg-6 col-md-6 col-sm-12">
-        <span class="section-label">Benessere completo</span>
-        <h2>Una pratica che lavora su <em>corpo, respiro e mente</em></h2>
-        <p>Il Kundalini Yoga agisce su sistema nervoso, respirazione e concentrazione. Ogni lezione combina kriya, pranayama, meditazione e rilassamento per liberare accumuli fisici ed emotivi.</p>
-        <p>La pratica non richiede esperienza iniziale: si adatta alla persona e ti accompagna passo dopo passo verso un equilibrio piu stabile.</p>
-      </div>
-      <div class="col-lg-1 d-none d-lg-block"></div>
-      <div class="col-lg-5 col-md-6 col-sm-12 mt-4 mt-md-0">
-        <img class="img-fluid" src="assets/images/c_allievi_yoga.jpg" alt="Allievi durante una pratica di Kundalini Yoga">
+        <div class="col-lg-6 col-md-6 col-sm-12">
+          <span class="section-label">Cos'è il Kundalini Yoga</span>
+          <h2>Un percorso di ascolto profondo tra <em>corpo, respiro e consapevolezza</em></h2>
+          <p>Il Kundalini Yoga è una pratica che unisce movimento, respiro e meditazione per sostenere il sistema nervoso e favorire l'equilibrio interiore.</p>
+          <p style="margin-top:14px;">Non richiede esperienza: si adatta alla persona e accompagna gradualmente nel lavoro su corpo e mente.</p>
+          <div style="margin-top:28px;">
+            <a class="btn" href="kundalini_yoga.html">Scopri il Kundalini Yoga</a>
+          </div>
+        </div>
+        <div class="col-lg-1 d-none d-lg-block"></div>
+        <div class="col-lg-5 col-md-6 col-sm-12 mt-4 mt-md-0">
+          <img class="img-fluid" src="assets/images/c_allievi_yoga.jpg" alt="Allievi durante una pratica di Kundalini Yoga">
+        </div>
       </div>
     </div>
   </section>
 
+
+  <!-- SEZIONE 2 – BENEFICI / BISOGNI -->
   <section class="section alt">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-7 col-md-9">
+          <span class="section-label">A chi è utile</span>
+          <h2>Quando senti il bisogno di <em>tornare a te</em></h2>
+          <p>Questa pratica può supportarti quando ti senti:</p>
+          <ul class="benefit-list">
+            <li>sopraffatto dagli impegni quotidiani</li>
+            <li>mentalmente affaticato</li>
+            <li>senza energia o centratura</li>
+            <li>in difficoltà a gestire lo stress</li>
+          </ul>
+          <blockquote class="key-phrase">
+            L'obiettivo non è aumentare lo sforzo, ma imparare a utilizzare l'energia in modo più efficace e stabile.
+          </blockquote>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- SEZIONE 3 – LEZIONE VIDEO -->
+  <section class="section">
     <div class="container">
       <span class="section-label">Lezione con Alessandra</span>
       <h2>A lezione con Alessandra Cota</h2>
       <div class="video-wrap">
         <iframe src="https://www.youtube-nocookie.com/embed/bszAZgT2eww" title="Lezione Kundalini Yoga Siena" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>
-      <div class="actions">
-        <a class="btn" href="kundalini_yoga.html">Scopri il Kundalini Yoga</a>
+    </div>
+  </section>
+
+
+  <!-- SEZIONE 4 – CHI SONO -->
+  <section class="section alt">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-7 col-md-8">
+          <span class="section-label">Chi sono</span>
+          <h2>Un accompagnamento gentile attraverso il <em>corpo e il respiro</em></h2>
+          <p>Ciao, mi chiamo Alessandra Cota. Aiuto tutti coloro che si sentono sopraffatti dagli impegni quotidiani a gestire lo stress e ad utilizzare il loro tempo in maniera efficace, ritrovando vitalità ed energia, attraverso una pratica antica, concreta e profonda.</p>
+          <p style="margin-top:14px;">Nel tempo ho praticato Ratna, Raja e Hatha Yoga, oltre alla meditazione nella tradizione Theravada: Samatha e Vipassana. Oggi accompagno le persone attraverso il Kundalini Yoga in un lavoro progressivo su corpo, respiro e consapevolezza del momento presente.</p>
+          <div style="margin-top:28px;">
+            <a class="btn" href="chi_sono.html">Vieni a praticare con me</a>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
+
+  <!-- SEZIONE 5 – CONTATTO -->
   <section class="section">
     <div class="container">
       <span class="section-label">Contattami</span>
-      <h2>Inizia con una <em>prima lezione gratuita</em></h2>
+      <h2>Aprire uno spazio per <em>iniziare</em></h2>
+      <p>Se senti che questo percorso può essere adatto a te, puoi scrivermi direttamente.</p>
       <div class="cards">
         <article class="card">
           <h3 class="contact-title">
@@ -188,6 +242,18 @@ ritrovando vitalità ed energia, attraverso una pratica antica, concreta e profo
     </div>
   </section>
 
+
+  <!-- CHIUSURA + CTA FINALE -->
+  <section class="closing">
+    <div class="container">
+      <blockquote>
+        Ogni ostacolo può diventare una risorsa quando impariamo a stare nel corpo, nel respiro e nel momento presente.
+      </blockquote>
+      <a class="btn btn-primary-cta" href="https://wa.me/393772850908?text=Ciao%20Alessandra%2C%20vorrei%20prenotare%20la%20prima%20lezione" target="_blank" rel="noopener">Prenota la tua prima lezione</a>
+    </div>
+  </section>
+
+
   <footer>
     <div class="container">
       <p>Alessandra Cota · Mahan Deva Kaur · Kundalini Yoga Siena</p>
@@ -218,7 +284,7 @@ ritrovando vitalità ed energia, attraverso una pratica antica, concreta e profo
       <p class="footer-meta">+39 377 285 0908</p>
     </div>
   </footer>
-<!-- Script necessari per il funzionamento del menu Bootstrap -->
+
   <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
